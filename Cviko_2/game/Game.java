@@ -37,7 +37,7 @@ public class Game {
 			System.out.println(findEnergyDifference(o[i], k[i]) + " " +
 					findEnergyDifference(k[i], o[i]) + " " +
 					findEnergyDifference(k[i], k[i]));
-*/
+*/ 
 		}
 
 		for (int i = 20; i < 40; i++) {
