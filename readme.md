@@ -1,3 +1,3 @@
-## Project of E-auction
+# Project of E-auction
 
-# Exercises made by Vadym Tilihuzov
+## Exercises made by Vadym Tilihuzov
