@@ -15,7 +15,7 @@ import javafx.stage.Window;
 
 
 public class LogController {
-	 @FXML
+	    @FXML
 	    private TextField loginNameField;
 
 	    @FXML
@@ -47,7 +47,7 @@ public class LogController {
 	        String password = passwordField.getText();
 
 	        //Starting first DB connection and initializing User list 
-	        SqlDB sql = new SqlDB();
+	        SqlDB sql = new SqlDB(true);
 	        Storage userInfo = new Storage(sql);
 	        userInfo.setUsers();
 	        
@@ -81,10 +81,17 @@ public class LogController {
 	    private boolean validate(String log, String pass, Storage user) {
 	    	
 	    	 for (int i = 0; i < user.getUsers().size(); i++) {
+	
 	             if (log.equals(user.getUsers().get(i).getLogin()) && pass.equals(user.getUsers().get(i).getPass())){
 	            	 return true;
 	             }
 	         }
 	    	 return false;
 	    }
+
+
+	@FXML
+	public void register(ActionEvent event) throws SQLException {
+		
+	}
 }
