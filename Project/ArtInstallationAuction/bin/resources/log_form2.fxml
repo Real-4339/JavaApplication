@@ -42,26 +42,14 @@
     <PasswordField fx:id="passwordField" prefHeight="40" 
                    GridPane.columnIndex="1" GridPane.rowIndex="3"/>
     <!-- Add Submit Button -->
-    <Button fx:id="submitButton" text="Log In"
+    <Button fx:id="submitButton" text="Submit"
             prefWidth="100" prefHeight="40" defaultButton="true"
             GridPane.columnIndex="0" GridPane.rowIndex="4"
             GridPane.columnSpan="2" GridPane.rowSpan="1"
             GridPane.halignment="CENTER"
-            onAction="#login">       
+            onAction="#login">
         <GridPane.margin>
-            <Insets top="20" right="140" bottom="20" left="0"></Insets>
-        </GridPane.margin>
-    </Button>
-    
-    <!-- Add Register Button -->
-    <Button fx:id="registerButton" text="Register"
-            prefWidth="100" prefHeight="40" defaultButton="true"
-            GridPane.columnIndex="1" GridPane.rowIndex="4"
-            GridPane.columnSpan="2" GridPane.rowSpan="1"
-            GridPane.halignment="CENTER"
-            onAction="#register">       
-        <GridPane.margin>
-            <Insets top="20" right="0" bottom="20" left="100"></Insets>
+            <Insets top="20" right="0" bottom="20" left="0"></Insets>
         </GridPane.margin>
     </Button>
 </GridPane>
