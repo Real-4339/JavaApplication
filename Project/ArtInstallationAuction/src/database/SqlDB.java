@@ -1,6 +1,9 @@
 package database;
 
 import java.sql.*;
+import java.util.ArrayList;
+import independent.User;
+
 
 public class SqlDB {
 	Connection connection;
@@ -37,6 +40,19 @@ public class SqlDB {
         }
     }
     
+    public void User_out(ArrayList<User> guys) throws SQLException {
+        String SQLREQUEST = "Select * from User";
+        ResultSet res = statement.executeQuery(SQLREQUEST);
+        while(res.next()){
+            guys.add(new User(res.getString("Login"), res.getString("Password"), res.getString("FirstName"), res.getString("SecondName"), res.getDouble("Balance"), res.getDouble("Spent")));
+        }
+    }
     
+    public boolean validate(String emailId, String password) throws SQLException { 
+    	
+    	
+    	
+    	return false;
+    }
 
 }
