@@ -47,12 +47,5 @@ public class SqlDB {
             guys.add(new User(res.getString("Login"), res.getString("Password"), res.getString("FirstName"), res.getString("SecondName"), res.getDouble("Balance"), res.getDouble("Spent")));
         }
     }
-    
-    public boolean validate(String emailId, String password) throws SQLException { 
-    	
-    	
-    	
-    	return false;
-    }
 
 }
