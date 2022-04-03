@@ -15,7 +15,7 @@ import javafx.stage.Window;
 
 public class LogController {
 	 @FXML
-	    private TextField emailIdField;
+	    private TextField loginNameField;
 
 	    @FXML
 	    private PasswordField passwordField;
@@ -28,10 +28,10 @@ public class LogController {
 
 	        Window owner = submitButton.getScene().getWindow();
 
-	        System.out.println(emailIdField.getText());
+	        System.out.println(loginNameField.getText());
 	        System.out.println(passwordField.getText());
 
-	        if (emailIdField.getText().isEmpty()) {
+	        if (loginNameField.getText().isEmpty()) {
 	            showAlert(Alert.AlertType.ERROR, owner, "Form Error!",
 	                "Please enter your email id");
 	            return;
@@ -42,7 +42,7 @@ public class LogController {
 	            return;
 	        }
 
-	        String emailId = emailIdField.getText();
+	        String loginName = loginNameField.getText();
 	        String password = passwordField.getText();
 
 	        /*SqlDB sql = new SqlDB();

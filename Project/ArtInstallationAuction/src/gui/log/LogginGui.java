@@ -20,9 +20,7 @@ public class LogginGui extends Application {
     }
 
     public static void main(String[] args) {
-    	//SqlDB sql = new SqlDB();
     	launch(args);
-        
     }
 
 }

@@ -19,7 +19,7 @@
                            maxWidth="Infinity" hgrow="ALWAYS"></ColumnConstraints>
     </columnConstraints>
     <!-- Add Header Label -->
-    <Label text="Login Form (FXML)" GridPane.columnIndex="0" 
+    <Label text="Art-installation $ Auction" GridPane.columnIndex="0" 
            GridPane.rowIndex="0" GridPane.columnSpan="2" 
            GridPane.rowSpan="1" GridPane.halignment="CENTER" >
         <font>
@@ -30,10 +30,10 @@
         </GridPane.margin>
     </Label>
     <!-- Add Email Label -->
-    <Label text="Email ID : " GridPane.columnIndex="0" 
+    <Label text="Name ID : " GridPane.columnIndex="0" 
            GridPane.rowIndex="2" ></Label>
     <!-- Add Email Text Field -->
-    <TextField fx:id="emailIdField" prefHeight="40" 
+    <TextField fx:id="loginNameField" prefHeight="40" 
                GridPane.columnIndex="1" GridPane.rowIndex="2"/>
     <!-- Add Password Label -->
     <Label text="Password : " GridPane.columnIndex="0" 
