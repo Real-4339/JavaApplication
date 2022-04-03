@@ -17,10 +17,13 @@ public class LogginGui extends Application {
         stage.setTitle("User Login");
         stage.setScene(new Scene(root, 800, 500));
         stage.show();
+
     }
 
-    public static void main(String[] args) {
-    	launch(args);
-    }
+	
+	public void pusk(String[] args) { 
+		  launch(args); 
+	}
+	
 
 }
