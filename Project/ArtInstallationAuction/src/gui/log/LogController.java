@@ -33,7 +33,7 @@ public class LogController {
 
 	        if (loginNameField.getText().isEmpty()) {
 	            showAlert(Alert.AlertType.ERROR, owner, "Form Error!",
-	                "Please enter your email id");
+	                "Please enter your Login id");
 	            return;
 	        }
 	        if (passwordField.getText().isEmpty()) {
@@ -45,14 +45,14 @@ public class LogController {
 	        String loginName = loginNameField.getText();
 	        String password = passwordField.getText();
 
-	        /*SqlDB sql = new SqlDB();
-	        boolean flag = sql.validate(emailId, password);
+	        SqlDB sql = new SqlDB();
+	        boolean flag = sql.validate(loginName, password);
 
 	        if (!flag) {
 	            infoBox("Please enter correct Email and Password", null, "Failed");
 	        } else {
 	            infoBox("Login Successful!", null, "Failed");
-	        }*/
+	        }
 	    }
 
 	    public static void infoBox(String infoMessage, String headerText, String title) {
