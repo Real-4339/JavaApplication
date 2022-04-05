@@ -19,7 +19,7 @@ public class LogginGui extends Application {
         stage.show();
 
     }
-
+    
 	
 	public void pusk(String[] args) { 
 		  launch(args); 
