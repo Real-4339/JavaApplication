@@ -6,11 +6,15 @@ import database.SqlDB;
 import independent.Storage;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 import javafx.stage.Window;
 
 
@@ -92,6 +96,28 @@ public class LogController {
 
 	@FXML
 	public void register(ActionEvent event) throws SQLException {
+	   		try {
+	   			System.out.println(getClass());
+	   			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/resources/register_form.fxml"));
+	   	        Parent root1 = (Parent) fxmlLoader.load();
+	   	        Stage stage = new Stage();
+	   	     stage.setTitle("User Registration");
+	   	        stage.setScene(new Scene(root1));  
+	   	        stage.show();
+	   	    } catch(Exception e) {
+	   	        e.printStackTrace();
+	   	    }
+//		try {
+//			RegistrationWindow reg = new RegistrationWindow();
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+    }
+	
+	@FXML
+	public void textOut(ActionEvent event) throws SQLException {
 		
 	}
+	
 }
