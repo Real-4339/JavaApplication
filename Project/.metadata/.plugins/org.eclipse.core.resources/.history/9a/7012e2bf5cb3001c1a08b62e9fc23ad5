@@ -1,0 +1,11 @@
+package program;
+
+import gui.log.LogginGui;
+
+public class Main {
+	
+	public static void main(String[] args) { 
+		LogginGui log = new LogginGui();
+	}
+
+}

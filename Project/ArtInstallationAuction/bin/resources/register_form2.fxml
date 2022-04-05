@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<GridPane fx:controller="gui.log.RegistrationWindow"
-    xmlns:fx="http://javafx.com/fxml" alignment="center"
-          hgap="10" vgap="10">
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="544.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="544.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/18" fx:controller="gui.log.LogController"
+    xmlns:fx="http://javafx.com/fxml"> 
    <children>
       <Text layoutX="106.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="───── Registration ─────" wrappingWidth="318.27581787109375">
          <font>
@@ -51,7 +45,12 @@
       <Text layoutX="196.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Already have an account ?" />
       <Button fx:id="ReturnToLogButton" cancelButton="true" layoutX="238.0" layoutY="495.0" mnemonicParsing="false" text="Sign in" />
       <TextField fx:id="ConfirmPasswordField" layoutX="313.0" layoutY="331.0" onInputMethodTextChanged="#textOut" prefHeight="25.0" prefWidth="163.0" />
-      <Text fx:id="hidetext" fill="#737070" layoutX="321.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Password" />
+      <Text fx:id="hidetext" disable="true" fill="#737070" layoutX="313.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Password">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <Blend opacity="0.0" />
+         </effect></Text>
    </children>
 </Pane>
-</GridPane>

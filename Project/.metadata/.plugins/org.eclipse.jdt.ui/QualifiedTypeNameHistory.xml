@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="independent.User"/>
+    <fullyQualifiedTypeName name="database.SqlDB"/>
+    <fullyQualifiedTypeName name="independent.Storage"/>
+    <fullyQualifiedTypeName name="gui.log.LogginGui"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="javafx.stage.Stage"/>
+    <fullyQualifiedTypeName name="javafx.concurrent.Task"/>
+</qualifiedTypeNameHistroy>
