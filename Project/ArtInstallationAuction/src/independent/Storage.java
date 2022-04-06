@@ -21,8 +21,18 @@ public class Storage {
 		return people;
 	}
 	
-	public void setUsers () throws SQLException {
+	public void updateUsers () throws SQLException {
 		sql.User_out(people);
+	}
+	
+	public void setArray (String login, String pass, String fname,String sname) throws SQLException {
+	  this.people.add(new User(login, pass, fname, sname, 0, 0));
+	  sql.User_in(people);
+	}
+	
+	public void setArrayEmail (String login, String pass, String fname,String sname, String email) throws SQLException {
+		this.people.add(new User(login, pass, fname, sname, email, 0, 0));
+		 sql.User_in(people);
 	}
 	
 }

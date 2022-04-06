@@ -5,6 +5,7 @@ public class User {
     private String password;
     private String firstName;
     private String secondName;
+    private String email;
     private double balance;
     private double spent;
 
@@ -12,6 +13,7 @@ public class User {
     public String getPass(){return password;}
     public String getfirstName(){return firstName;}
     public String getsecName(){return secondName;}
+    public String getEmail(){return email;}
    
     public double getBalance(){return balance;}
     public double getSpent(){return spent;}
@@ -21,6 +23,7 @@ public class User {
     private void setPass(String Password){ password = Password;}
     private void setfirstName(String Name){ firstName = Name;}
     private void setsecName(String Name){ secondName = Name;}
+    private void setEmail(String Email){ email = Email;}
     
     private void setBalance(double Balance){ balance = Balance;}
     private void setSpent(double Spent){ spent = Spent;}
@@ -45,12 +48,13 @@ public class User {
        this.setSpent(spent);
     }
 
-    public User (String login, String pass, String firstName, String secName, int balance, int spent)
+    public User (String login, String pass, String firstName, String secName, String Email, int balance, int spent)
     {
     	this.setfirstName(firstName);
         this.setsecName(secName);
         this.setLogin(login);
         this.setPass(pass);
+        this.setEmail(Email);
        this.setBalance(balance);
        this.setSpent(spent);
     }
