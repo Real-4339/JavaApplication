@@ -53,6 +53,7 @@ public class LogController {
 	    @FXML
 	    private TextField ConfirmPasswordField;
 	    
+	    // Event that shows up when log in button is pushed
 	    @FXML
 	    public void login(ActionEvent event) throws SQLException {
 
@@ -80,7 +81,7 @@ public class LogController {
 	        Storage userInfo = new Storage(sql);
 	        userInfo.updateUsers();
 	        
-	        
+	        // Making a flag to control enter to main app
 	        boolean flag = this.validate(loginName, password, userInfo);
 
 	        if (!flag) {
@@ -90,6 +91,7 @@ public class LogController {
 	        }
 	    }
 
+	    // InfoBox pops up whenever you Login successfully or not, just to inform you
 	    public static void infoBox(String infoMessage, String headerText, String title) {
 	        Alert alert = new Alert(AlertType.CONFIRMATION);
 	        alert.setContentText(infoMessage);
@@ -97,7 +99,8 @@ public class LogController {
 	        alert.setHeaderText(headerText);
 	        alert.showAndWait();
 	    }
-
+	    
+        // Alert window pop
 	    private static void showAlert(Alert.AlertType alertType, Window owner, String title, String message) {
 	        Alert alert = new Alert(alertType);
 	        alert.setTitle(title);
@@ -107,6 +110,7 @@ public class LogController {
 	        alert.show();
 	    }
 	    
+	    // Controlling users input and db
 	    private boolean validate(String log, String pass, Storage user) {
 	    	
 	    	 for (int i = 0; i < user.getUsers().size(); i++) {
@@ -120,7 +124,7 @@ public class LogController {
 	    	 return false;
 	    }
 
-
+	//Event to control on a Login form register button
 	@FXML
 	public void register(ActionEvent event) throws SQLException {
 	   		try {
@@ -142,6 +146,8 @@ public class LogController {
 //		}
     }
 	
+	
+	//Event to control on a register form register button
 	@FXML
 	public void Register(ActionEvent event) throws SQLException {
 		Window window = RegisterButton.getScene().getWindow();
@@ -153,6 +159,8 @@ public class LogController {
         System.out.println(PasswordField.getText());
         System.out.println(ConfirmPasswordField.getText());
         
+        
+        // Controlling if mainly all fields are filled
         if (FirstNameField.getText().isEmpty()) {
             showAlert(Alert.AlertType.ERROR, window, "Form Error!",
                 "Please enter your First Name");
@@ -181,7 +189,7 @@ public class LogController {
        	 return;
         }
         
-        
+        //making a connection to a db and making storage to hold info
         SqlDB sql = new SqlDB(true);
         Storage store = new Storage(sql);
         
@@ -231,6 +239,7 @@ public class LogController {
         
 	}
 	
+	// Event for a button sign in on a register form
 	@FXML
 	public void back(ActionEvent event) throws SQLException {
 		Stage stage = (Stage) ReturnToLogButton.getScene().getWindow();
