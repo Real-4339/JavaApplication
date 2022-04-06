@@ -47,5 +47,11 @@ public class SqlDB {
             guys.add(new User(res.getString("Login"), res.getString("Password"), res.getString("FirstName"), res.getString("SecondName"), res.getDouble("Balance"), res.getDouble("Spent")));
         }
     }
-
+    public void User_in(ArrayList<User> guy) throws SQLException {
+        statement.executeUpdate("INSERT INTO User(Login, Password, FirstName, SecondName, Balance, Spent)" + "VALUES ('"+ guy.get(0).getLogin()+"', '"+ guy.get(0).getPass()+"', '"+ guy.get(0).getfirstName()+"', '"+ guy.get(0).getsecName()+"', 0, 0)");
+    }
+    
+    public void User_inEmail(ArrayList<User> guy) throws SQLException {
+        statement.executeUpdate("INSERT INTO User(Login, Password, FirstName, SecondName, Email, Balance, Spent)" + "VALUES ('"+ guy.get(0).getLogin()+"', '"+ guy.get(0).getPass()+"', '"+ guy.get(0).getfirstName()+"', '"+ guy.get(0).getsecName()+"', '"+ guy.get(0).getEmail()+"', 0, 0)");
+    }
 }
