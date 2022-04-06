@@ -6,6 +6,7 @@ import independent.Storage;
 
 public class Main {
 	
+	// Making main storage and sql connection for a program
 	SqlDB sql = new SqlDB();
     Storage polka = new Storage();
 	
