@@ -4,6 +4,7 @@ import java.sql.SQLException;
 
 import database.SqlDB;
 import independent.Storage;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -184,17 +185,50 @@ public class LogController {
         SqlDB sql = new SqlDB(true);
         Storage store = new Storage(sql);
         
-        if (EmailField.getText().isBlank()) {
-        	
-        	store.setArray(LoginField.getText(), PasswordField.getText(), FirstNameField.getText(), SecondNameField.getText());
-        	Stage stage = (Stage) RegisterButton.getScene().getWindow();
-    		stage.close();
-        	return;
-        }
         
-    	store.setArrayEmail(LoginField.getText(), PasswordField.getText(), FirstNameField.getText(), SecondNameField.getText(), EmailField.getText());
-    	Stage stage = (Stage) RegisterButton.getScene().getWindow();
-		stage.close();
+        // Old fun to call sql fun to add a user
+//        if (EmailField.getText().isBlank()) {
+//        	
+//        	store.setArray(LoginField.getText(), PasswordField.getText(), FirstNameField.getText(), SecondNameField.getText());
+//        	Stage stage = (Stage) RegisterButton.getScene().getWindow();
+//    		stage.close();
+//        	return;
+//        }
+//        
+//    	store.setArrayEmail(LoginField.getText(), PasswordField.getText(), FirstNameField.getText(), SecondNameField.getText(), EmailField.getText());
+//    	Stage stage = (Stage) RegisterButton.getScene().getWindow();
+//		stage.close();
+        
+        //Thread that controlling closing reg. form and adding User 
+        Thread th = new Thread() {
+        	public void run()  {
+        		if (EmailField.getText().isBlank()) {
+              
+                  	try {
+						store.setArray(LoginField.getText(), PasswordField.getText(), FirstNameField.getText(), SecondNameField.getText());
+					} catch (SQLException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+                  	Stage stage = (Stage) RegisterButton.getScene().getWindow();
+                  	Platform.runLater(() -> stage.close()); 
+                  	return;
+                  }
+                  
+              	try {
+					store.setArrayEmail(LoginField.getText(), PasswordField.getText(), FirstNameField.getText(), SecondNameField.getText(), EmailField.getText());
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+              	Stage stage = (Stage) RegisterButton.getScene().getWindow();
+              	Platform.runLater(() -> stage.close()); 
+        	}
+        };
+        
+        th.setDaemon(true);
+        th.start();
+        
 	}
 	
 	@FXML
