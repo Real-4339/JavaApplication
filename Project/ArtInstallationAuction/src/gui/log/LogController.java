@@ -27,7 +27,31 @@ public class LogController {
 
 	    @FXML
 	    private Button submitButton;
+	    
+	    @FXML
+        private Button RegisterButton;
+	    
+	    @FXML
+	    private Button ReturnToLogButton;
+	    
+	    @FXML
+	    private TextField FirstNameField;
+	    
+	    @FXML
+	    private TextField SecondNameField;
 
+	    @FXML
+	    private TextField EmailField;
+	    
+	    @FXML
+	    private TextField LoginField;
+	    
+	    @FXML
+	    private TextField PasswordField;
+	    
+	    @FXML
+	    private TextField ConfirmPasswordField;
+	    
 	    @FXML
 	    public void login(ActionEvent event) throws SQLException {
 
@@ -53,7 +77,7 @@ public class LogController {
 	        //Starting first DB connection and initializing User list 
 	        SqlDB sql = new SqlDB(true);
 	        Storage userInfo = new Storage(sql);
-	        userInfo.setUsers();
+	        userInfo.updateUsers();
 	        
 	        
 	        boolean flag = this.validate(loginName, password, userInfo);
@@ -85,7 +109,9 @@ public class LogController {
 	    private boolean validate(String log, String pass, Storage user) {
 	    	
 	    	 for (int i = 0; i < user.getUsers().size(); i++) {
-	
+	             
+	    		 System.out.println(user.getUsers().get(i).getLogin() +" "+ user.getUsers().get(i).getPass());
+	    		 
 	             if (log.equals(user.getUsers().get(i).getLogin()) && pass.equals(user.getUsers().get(i).getPass())){
 	            	 return true;
 	             }
@@ -98,7 +124,7 @@ public class LogController {
 	public void register(ActionEvent event) throws SQLException {
 	   		try {
 	   			System.out.println(getClass());
-	   			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/resources/register_form.fxml"));
+	   			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/resources/register_form2.fxml"));
 	   	        Parent root1 = (Parent) fxmlLoader.load();
 	   	        Stage stage = new Stage();
 	   	     stage.setTitle("User Registration");
@@ -116,8 +142,65 @@ public class LogController {
     }
 	
 	@FXML
-	public void textOut(ActionEvent event) throws SQLException {
+	public void Register(ActionEvent event) throws SQLException {
+		Window window = RegisterButton.getScene().getWindow();
 		
+		System.out.println(FirstNameField.getText());
+        System.out.println(SecondNameField.getText());
+        System.out.println(EmailField.getText());
+        System.out.println(LoginField.getText());
+        System.out.println(PasswordField.getText());
+        System.out.println(ConfirmPasswordField.getText());
+        
+        if (FirstNameField.getText().isEmpty()) {
+            showAlert(Alert.AlertType.ERROR, window, "Form Error!",
+                "Please enter your First Name");
+            return;
+        }
+        if (SecondNameField.getText().isEmpty()) {
+            showAlert(Alert.AlertType.ERROR, window, "Form Error!",
+                "Please enter a your Second Name");
+            return;
+        }
+        
+        if (LoginField.getText().isEmpty()) {
+            showAlert(Alert.AlertType.ERROR, window, "Form Error!",
+                "Please enter your Future Login");
+            return;
+        }
+        if (PasswordField.getText().isEmpty()) {
+            showAlert(Alert.AlertType.ERROR, window, "Form Error!",
+                "Please enter a password in a field");
+            return;
+        }
+        if (!ConfirmPasswordField.getText().equals(PasswordField.getText()))
+        {
+       	 showAlert(Alert.AlertType.ERROR, window, "Form Error!",
+       			 "Oops! Password does not matches");
+       	 return;
+        }
+        
+        
+        SqlDB sql = new SqlDB(true);
+        Storage store = new Storage(sql);
+        
+        if (EmailField.getText().isBlank()) {
+        	
+        	store.setArray(LoginField.getText(), PasswordField.getText(), FirstNameField.getText(), SecondNameField.getText());
+        	Stage stage = (Stage) RegisterButton.getScene().getWindow();
+    		stage.close();
+        	return;
+        }
+        
+    	store.setArrayEmail(LoginField.getText(), PasswordField.getText(), FirstNameField.getText(), SecondNameField.getText(), EmailField.getText());
+    	Stage stage = (Stage) RegisterButton.getScene().getWindow();
+		stage.close();
+	}
+	
+	@FXML
+	public void back(ActionEvent event) throws SQLException {
+		Stage stage = (Stage) ReturnToLogButton.getScene().getWindow();
+		stage.close();
 	}
 	
 }
