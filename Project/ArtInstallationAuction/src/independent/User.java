@@ -58,7 +58,8 @@ public class User {
        this.setBalance(balance);
        this.setSpent(spent);
     }
-
+    
+    // Fun to minimize balance from user account
     public void MinimizeBalance (double price)
     {
        balance -= price;
