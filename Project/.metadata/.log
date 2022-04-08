@@ -3023,3 +3023,707 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.registry 4 0 2022-04-08 10:54:26.330
+!MESSAGE IOException encountered while reading "I:\Eclipse\eclipse\configuration\org.eclipse.core.runtime\.mainData.2".
+!STACK 0
+java.io.IOException: The device is not ready
+	at java.base/java.io.RandomAccessFile.readBytes(Native Method)
+	at java.base/java.io.RandomAccessFile.read(RandomAccessFile.java:405)
+	at org.eclipse.core.internal.registry.BufferedRandomInputStream.fillBuffer(BufferedRandomInputStream.java:60)
+	at org.eclipse.core.internal.registry.BufferedRandomInputStream.read(BufferedRandomInputStream.java:68)
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:393)
+	at org.eclipse.core.internal.registry.TableReader.basicLoadExtensionPoint(TableReader.java:360)
+	at org.eclipse.core.internal.registry.TableReader.loadExtensionPoint(TableReader.java:349)
+	at org.eclipse.core.internal.registry.TableReader.loadExtensionPointTree(TableReader.java:319)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.load(RegistryObjectManager.java:428)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.basicGetObject(RegistryObjectManager.java:274)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.getObject(RegistryObjectManager.java:266)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getExtensionPoint(BaseExtensionPointHandle.java:120)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getConfigurationElements(BaseExtensionPointHandle.java:74)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationPresentationManager.initializeTabGroupExtensions(LaunchConfigurationPresentationManager.java:113)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationPresentationManager.getExtension(LaunchConfigurationPresentationManager.java:296)
+	at org.eclipse.debug.internal.ui.launchConfigurations.PerspectiveManager.getDefaultLaunchPerspective(PerspectiveManager.java:945)
+	at org.eclipse.debug.internal.ui.launchConfigurations.PerspectiveManager.getLaunchPerspective(PerspectiveManager.java:784)
+	at org.eclipse.debug.internal.ui.launchConfigurations.PerspectiveManager.getPerspectiveId(PerspectiveManager.java:759)
+	at org.eclipse.debug.internal.ui.launchConfigurations.PerspectiveManager.launchAdded(PerspectiveManager.java:344)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.run(LaunchManager.java:425)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.notify(LaunchManager.java:415)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1027)
+	at org.eclipse.debug.internal.core.LaunchManager.addLaunch(LaunchManager.java:678)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:761)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 2 2022-04-08 10:54:26.358
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.internal.registry.ExtensionPoint.getRawChildren()" because "xpt" is null
+	at org.eclipse.core.internal.registry.TableReader.loadExtensionPointTree(TableReader.java:320)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.load(RegistryObjectManager.java:428)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.basicGetObject(RegistryObjectManager.java:274)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.getObject(RegistryObjectManager.java:266)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getExtensionPoint(BaseExtensionPointHandle.java:120)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getConfigurationElements(BaseExtensionPointHandle.java:74)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationPresentationManager.initializeTabGroupExtensions(LaunchConfigurationPresentationManager.java:113)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationPresentationManager.getExtension(LaunchConfigurationPresentationManager.java:296)
+	at org.eclipse.debug.internal.ui.launchConfigurations.PerspectiveManager.getDefaultLaunchPerspective(PerspectiveManager.java:945)
+	at org.eclipse.debug.internal.ui.launchConfigurations.PerspectiveManager.getLaunchPerspective(PerspectiveManager.java:784)
+	at org.eclipse.debug.internal.ui.launchConfigurations.PerspectiveManager.getPerspectiveId(PerspectiveManager.java:759)
+	at org.eclipse.debug.internal.ui.launchConfigurations.PerspectiveManager.launchAdded(PerspectiveManager.java:344)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.run(LaunchManager.java:425)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.notify(LaunchManager.java:415)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1027)
+	at org.eclipse.debug.internal.core.LaunchManager.addLaunch(LaunchManager.java:678)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:761)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 120 2022-04-08 10:54:26.367
+!MESSAGE An exception occurred during launch change notification.
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.internal.registry.ExtensionPoint.getRawChildren()" because "xpt" is null
+	at org.eclipse.core.internal.registry.TableReader.loadExtensionPointTree(TableReader.java:320)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.load(RegistryObjectManager.java:428)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.basicGetObject(RegistryObjectManager.java:274)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.getObject(RegistryObjectManager.java:266)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getExtensionPoint(BaseExtensionPointHandle.java:120)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getConfigurationElements(BaseExtensionPointHandle.java:74)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationPresentationManager.initializeTabGroupExtensions(LaunchConfigurationPresentationManager.java:113)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationPresentationManager.getExtension(LaunchConfigurationPresentationManager.java:296)
+	at org.eclipse.debug.internal.ui.launchConfigurations.PerspectiveManager.getDefaultLaunchPerspective(PerspectiveManager.java:945)
+	at org.eclipse.debug.internal.ui.launchConfigurations.PerspectiveManager.getLaunchPerspective(PerspectiveManager.java:784)
+	at org.eclipse.debug.internal.ui.launchConfigurations.PerspectiveManager.getPerspectiveId(PerspectiveManager.java:759)
+	at org.eclipse.debug.internal.ui.launchConfigurations.PerspectiveManager.launchAdded(PerspectiveManager.java:344)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.run(LaunchManager.java:425)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.notify(LaunchManager.java:415)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1027)
+	at org.eclipse.debug.internal.core.LaunchManager.addLaunch(LaunchManager.java:678)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:761)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.registry 4 0 2022-04-08 10:54:26.379
+!MESSAGE IOException encountered while reading "I:\Eclipse\eclipse\configuration\org.eclipse.core.runtime\.mainData.2".
+!STACK 0
+java.io.IOException: The device is not ready
+	at java.base/java.io.RandomAccessFile.readBytes(Native Method)
+	at java.base/java.io.RandomAccessFile.read(RandomAccessFile.java:405)
+	at org.eclipse.core.internal.registry.BufferedRandomInputStream.fillBuffer(BufferedRandomInputStream.java:60)
+	at org.eclipse.core.internal.registry.BufferedRandomInputStream.read(BufferedRandomInputStream.java:68)
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:393)
+	at org.eclipse.core.internal.registry.TableReader.basicLoadExtensionPoint(TableReader.java:360)
+	at org.eclipse.core.internal.registry.TableReader.loadExtensionPoint(TableReader.java:349)
+	at org.eclipse.core.internal.registry.TableReader.loadExtensionPointTree(TableReader.java:319)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.load(RegistryObjectManager.java:428)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.basicGetObject(RegistryObjectManager.java:274)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.getObject(RegistryObjectManager.java:266)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getExtensionPoint(BaseExtensionPointHandle.java:120)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getConfigurationElements(BaseExtensionPointHandle.java:74)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructures.initPluginContributedJavaLogicalStructure(JavaLogicalStructures.java:152)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructures.<clinit>(JavaLogicalStructures.java:105)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.activate(JavaDebugOptionsManager.java:812)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.launchChanged(JavaDebugOptionsManager.java:829)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.launchAdded(JavaDebugOptionsManager.java:822)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.run(LaunchManager.java:425)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.notify(LaunchManager.java:415)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1027)
+	at org.eclipse.debug.internal.core.LaunchManager.addLaunch(LaunchManager.java:678)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:761)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 2 2022-04-08 10:54:26.381
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.ExceptionInInitializerError
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.activate(JavaDebugOptionsManager.java:812)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.launchChanged(JavaDebugOptionsManager.java:829)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.launchAdded(JavaDebugOptionsManager.java:822)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.run(LaunchManager.java:425)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.notify(LaunchManager.java:415)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1027)
+	at org.eclipse.debug.internal.core.LaunchManager.addLaunch(LaunchManager.java:678)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:761)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.core.internal.registry.ExtensionPoint.getRawChildren()" because "xpt" is null
+	at org.eclipse.core.internal.registry.TableReader.loadExtensionPointTree(TableReader.java:320)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.load(RegistryObjectManager.java:428)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.basicGetObject(RegistryObjectManager.java:274)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.getObject(RegistryObjectManager.java:266)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getExtensionPoint(BaseExtensionPointHandle.java:120)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getConfigurationElements(BaseExtensionPointHandle.java:74)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructures.initPluginContributedJavaLogicalStructure(JavaLogicalStructures.java:152)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructures.<clinit>(JavaLogicalStructures.java:105)
+	... 13 more
+
+!ENTRY org.eclipse.debug.core 4 120 2022-04-08 10:54:26.382
+!MESSAGE An exception occurred during launch change notification.
+!STACK 0
+java.lang.ExceptionInInitializerError
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.activate(JavaDebugOptionsManager.java:812)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.launchChanged(JavaDebugOptionsManager.java:829)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.launchAdded(JavaDebugOptionsManager.java:822)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.run(LaunchManager.java:425)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.notify(LaunchManager.java:415)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1027)
+	at org.eclipse.debug.internal.core.LaunchManager.addLaunch(LaunchManager.java:678)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:761)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.core.internal.registry.ExtensionPoint.getRawChildren()" because "xpt" is null
+	at org.eclipse.core.internal.registry.TableReader.loadExtensionPointTree(TableReader.java:320)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.load(RegistryObjectManager.java:428)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.basicGetObject(RegistryObjectManager.java:274)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.getObject(RegistryObjectManager.java:266)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getExtensionPoint(BaseExtensionPointHandle.java:120)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getConfigurationElements(BaseExtensionPointHandle.java:74)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructures.initPluginContributedJavaLogicalStructure(JavaLogicalStructures.java:152)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructures.<clinit>(JavaLogicalStructures.java:105)
+	... 13 more
+
+!ENTRY org.eclipse.equinox.registry 4 0 2022-04-08 10:54:26.387
+!MESSAGE IOException encountered while reading "I:\Eclipse\eclipse\configuration\org.eclipse.core.runtime\.mainData.2".
+!STACK 0
+java.io.IOException: The device is not ready
+	at java.base/java.io.RandomAccessFile.readBytes(Native Method)
+	at java.base/java.io.RandomAccessFile.read(RandomAccessFile.java:405)
+	at org.eclipse.core.internal.registry.BufferedRandomInputStream.fillBuffer(BufferedRandomInputStream.java:60)
+	at org.eclipse.core.internal.registry.BufferedRandomInputStream.read(BufferedRandomInputStream.java:68)
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:393)
+	at org.eclipse.core.internal.registry.TableReader.basicLoadExtensionPoint(TableReader.java:360)
+	at org.eclipse.core.internal.registry.TableReader.loadExtensionPoint(TableReader.java:349)
+	at org.eclipse.core.internal.registry.TableReader.loadExtensionPointTree(TableReader.java:319)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.load(RegistryObjectManager.java:428)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.basicGetObject(RegistryObjectManager.java:274)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.getObject(RegistryObjectManager.java:266)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getExtensionPoint(BaseExtensionPointHandle.java:120)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getConfigurationElements(BaseExtensionPointHandle.java:74)
+	at org.eclipse.debug.core.DebugPlugin.initializeStatusHandlers(DebugPlugin.java:1076)
+	at org.eclipse.debug.core.DebugPlugin.getStatusHandler(DebugPlugin.java:645)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.saveBeforeLaunch(LaunchConfigurationDelegate.java:241)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.preLaunchCheck(LaunchConfigurationDelegate.java:197)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.preLaunchCheck(AbstractJavaLaunchConfigurationDelegate.java:1026)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:767)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2022-04-08 10:54:26.409
+!MESSAGE An internal error occurred during: "Launching Main".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.internal.registry.ExtensionPoint.getRawChildren()" because "xpt" is null
+	at org.eclipse.core.internal.registry.TableReader.loadExtensionPointTree(TableReader.java:320)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.load(RegistryObjectManager.java:428)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.basicGetObject(RegistryObjectManager.java:274)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.getObject(RegistryObjectManager.java:266)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getExtensionPoint(BaseExtensionPointHandle.java:120)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getConfigurationElements(BaseExtensionPointHandle.java:74)
+	at org.eclipse.debug.core.DebugPlugin.initializeStatusHandlers(DebugPlugin.java:1076)
+	at org.eclipse.debug.core.DebugPlugin.getStatusHandler(DebugPlugin.java:645)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.saveBeforeLaunch(LaunchConfigurationDelegate.java:241)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.preLaunchCheck(LaunchConfigurationDelegate.java:197)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.preLaunchCheck(AbstractJavaLaunchConfigurationDelegate.java:1026)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:767)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.registry 4 0 2022-04-08 10:54:34.362
+!MESSAGE IOException encountered while reading "I:\Eclipse\eclipse\configuration\org.eclipse.core.runtime\.mainData.2".
+!STACK 0
+java.io.IOException: The device is not ready
+	at java.base/java.io.RandomAccessFile.readBytes(Native Method)
+	at java.base/java.io.RandomAccessFile.read(RandomAccessFile.java:405)
+	at org.eclipse.core.internal.registry.BufferedRandomInputStream.fillBuffer(BufferedRandomInputStream.java:60)
+	at org.eclipse.core.internal.registry.BufferedRandomInputStream.read(BufferedRandomInputStream.java:68)
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:393)
+	at org.eclipse.core.internal.registry.TableReader.basicLoadExtensionPoint(TableReader.java:360)
+	at org.eclipse.core.internal.registry.TableReader.loadExtensionPoint(TableReader.java:349)
+	at org.eclipse.core.internal.registry.TableReader.loadExtensionPointTree(TableReader.java:319)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.load(RegistryObjectManager.java:428)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.basicGetObject(RegistryObjectManager.java:274)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.getObject(RegistryObjectManager.java:266)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getExtensionPoint(BaseExtensionPointHandle.java:120)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getConfigurationElements(BaseExtensionPointHandle.java:74)
+	at org.eclipse.debug.core.DebugPlugin.initializeStatusHandlers(DebugPlugin.java:1076)
+	at org.eclipse.debug.core.DebugPlugin.getStatusHandler(DebugPlugin.java:645)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.saveBeforeLaunch(LaunchConfigurationDelegate.java:241)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.preLaunchCheck(LaunchConfigurationDelegate.java:197)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.preLaunchCheck(AbstractJavaLaunchConfigurationDelegate.java:1026)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:767)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2022-04-08 10:54:34.363
+!MESSAGE An internal error occurred during: "Launching Main".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.internal.registry.ExtensionPoint.getRawChildren()" because "xpt" is null
+	at org.eclipse.core.internal.registry.TableReader.loadExtensionPointTree(TableReader.java:320)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.load(RegistryObjectManager.java:428)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.basicGetObject(RegistryObjectManager.java:274)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.getObject(RegistryObjectManager.java:266)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getExtensionPoint(BaseExtensionPointHandle.java:120)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getConfigurationElements(BaseExtensionPointHandle.java:74)
+	at org.eclipse.debug.core.DebugPlugin.initializeStatusHandlers(DebugPlugin.java:1076)
+	at org.eclipse.debug.core.DebugPlugin.getStatusHandler(DebugPlugin.java:645)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.saveBeforeLaunch(LaunchConfigurationDelegate.java:241)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.preLaunchCheck(LaunchConfigurationDelegate.java:197)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.preLaunchCheck(AbstractJavaLaunchConfigurationDelegate.java:1026)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:767)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.registry 4 0 2022-04-08 10:54:47.183
+!MESSAGE IOException encountered while reading "I:\Eclipse\eclipse\configuration\org.eclipse.core.runtime\.mainData.2".
+!STACK 0
+java.io.IOException: The device is not ready
+	at java.base/java.io.RandomAccessFile.readBytes(Native Method)
+	at java.base/java.io.RandomAccessFile.read(RandomAccessFile.java:405)
+	at org.eclipse.core.internal.registry.BufferedRandomInputStream.fillBuffer(BufferedRandomInputStream.java:60)
+	at org.eclipse.core.internal.registry.BufferedRandomInputStream.read(BufferedRandomInputStream.java:68)
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:393)
+	at org.eclipse.core.internal.registry.TableReader.basicLoadExtensionPoint(TableReader.java:360)
+	at org.eclipse.core.internal.registry.TableReader.loadExtensionPoint(TableReader.java:349)
+	at org.eclipse.core.internal.registry.TableReader.loadExtensionPointTree(TableReader.java:319)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.load(RegistryObjectManager.java:428)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.basicGetObject(RegistryObjectManager.java:274)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.getObject(RegistryObjectManager.java:266)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getExtensionPoint(BaseExtensionPointHandle.java:120)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getConfigurationElements(BaseExtensionPointHandle.java:74)
+	at org.eclipse.debug.core.DebugPlugin.initializeStatusHandlers(DebugPlugin.java:1076)
+	at org.eclipse.debug.core.DebugPlugin.getStatusHandler(DebugPlugin.java:645)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.saveBeforeLaunch(LaunchConfigurationDelegate.java:241)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.preLaunchCheck(LaunchConfigurationDelegate.java:197)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.preLaunchCheck(AbstractJavaLaunchConfigurationDelegate.java:1026)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:767)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2022-04-08 10:54:47.184
+!MESSAGE An internal error occurred during: "Launching Main".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.internal.registry.ExtensionPoint.getRawChildren()" because "xpt" is null
+	at org.eclipse.core.internal.registry.TableReader.loadExtensionPointTree(TableReader.java:320)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.load(RegistryObjectManager.java:428)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.basicGetObject(RegistryObjectManager.java:274)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.getObject(RegistryObjectManager.java:266)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getExtensionPoint(BaseExtensionPointHandle.java:120)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getConfigurationElements(BaseExtensionPointHandle.java:74)
+	at org.eclipse.debug.core.DebugPlugin.initializeStatusHandlers(DebugPlugin.java:1076)
+	at org.eclipse.debug.core.DebugPlugin.getStatusHandler(DebugPlugin.java:645)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.saveBeforeLaunch(LaunchConfigurationDelegate.java:241)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.preLaunchCheck(LaunchConfigurationDelegate.java:197)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.preLaunchCheck(AbstractJavaLaunchConfigurationDelegate.java:1026)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:767)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.registry 4 0 2022-04-08 10:55:07.574
+!MESSAGE IOException encountered while reading "I:\Eclipse\eclipse\configuration\org.eclipse.core.runtime\.mainData.2".
+!STACK 0
+java.io.IOException: The device is not ready
+	at java.base/java.io.RandomAccessFile.readBytes(Native Method)
+	at java.base/java.io.RandomAccessFile.read(RandomAccessFile.java:405)
+	at org.eclipse.core.internal.registry.BufferedRandomInputStream.fillBuffer(BufferedRandomInputStream.java:60)
+	at org.eclipse.core.internal.registry.BufferedRandomInputStream.read(BufferedRandomInputStream.java:68)
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:393)
+	at org.eclipse.core.internal.registry.TableReader.basicLoadExtensionPoint(TableReader.java:360)
+	at org.eclipse.core.internal.registry.TableReader.loadExtensionPoint(TableReader.java:349)
+	at org.eclipse.core.internal.registry.TableReader.loadExtensionPointTree(TableReader.java:319)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.load(RegistryObjectManager.java:428)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.basicGetObject(RegistryObjectManager.java:274)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.getObject(RegistryObjectManager.java:266)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getExtensionPoint(BaseExtensionPointHandle.java:120)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getExtensions(BaseExtensionPointHandle.java:36)
+	at org.eclipse.ui.internal.registry.RegistryReader.readRegistry(RegistryReader.java:149)
+	at org.eclipse.ui.internal.registry.PropertyPagesRegistryReader.registerPropertyPages(PropertyPagesRegistryReader.java:207)
+	at org.eclipse.ui.internal.dialogs.PropertyPageContributorManager.loadContributors(PropertyPageContributorManager.java:195)
+	at org.eclipse.ui.internal.dialogs.PropertyPageContributorManager.<init>(PropertyPageContributorManager.java:67)
+	at org.eclipse.ui.internal.dialogs.PropertyPageContributorManager.getManager(PropertyPageContributorManager.java:185)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:2981)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1124)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1392)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1392)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1368)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1716)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:1743)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1743)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1752)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$2(WorkbenchWindow.java:503)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:570)
+	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1063)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1087)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1072)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:269)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1552)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4748)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2286)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5015)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4847)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2286)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5015)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4847)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2286)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5015)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3630)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui 4 0 2022-04-08 10:55:07.576
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.internal.registry.ExtensionPoint.getRawChildren()" because "xpt" is null
+	at org.eclipse.core.internal.registry.TableReader.loadExtensionPointTree(TableReader.java:320)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.load(RegistryObjectManager.java:428)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.basicGetObject(RegistryObjectManager.java:274)
+	at org.eclipse.core.internal.registry.RegistryObjectManager.getObject(RegistryObjectManager.java:266)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getExtensionPoint(BaseExtensionPointHandle.java:120)
+	at org.eclipse.core.internal.registry.BaseExtensionPointHandle.getExtensions(BaseExtensionPointHandle.java:36)
+	at org.eclipse.ui.internal.registry.RegistryReader.readRegistry(RegistryReader.java:149)
+	at org.eclipse.ui.internal.registry.PropertyPagesRegistryReader.registerPropertyPages(PropertyPagesRegistryReader.java:207)
+	at org.eclipse.ui.internal.dialogs.PropertyPageContributorManager.loadContributors(PropertyPageContributorManager.java:195)
+	at org.eclipse.ui.internal.dialogs.PropertyPageContributorManager.<init>(PropertyPageContributorManager.java:67)
+	at org.eclipse.ui.internal.dialogs.PropertyPageContributorManager.getManager(PropertyPageContributorManager.java:185)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:2981)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1124)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1392)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1392)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1368)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1716)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:1743)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1743)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1752)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$2(WorkbenchWindow.java:503)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:570)
+	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1063)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1087)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1072)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:269)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1552)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4748)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2286)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5015)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4847)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2286)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5015)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4847)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2286)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5015)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3630)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jdt.debug.ui 4 0 2022-04-08 10:55:07.709
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.jdt.internal.debug.ui.JDIDebugUIPlugin.stop() of bundle org.eclipse.jdt.debug.ui.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:890)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1046)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:376)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1888)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:208)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:226)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructures
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.shutdown(JavaDebugOptionsManager.java:246)
+	at org.eclipse.jdt.internal.debug.ui.JDIDebugUIPlugin.stop(JDIDebugUIPlugin.java:446)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:870)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:862)
+	... 13 more
+Root exception:
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructures
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.shutdown(JavaDebugOptionsManager.java:246)
+	at org.eclipse.jdt.internal.debug.ui.JDIDebugUIPlugin.stop(JDIDebugUIPlugin.java:446)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:870)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:862)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1046)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:376)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1888)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:208)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:226)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SESSION 2022-04-08 10:55:15.827 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.fx.core.guice 4 0 2022-04-08 10:55:18.731
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.core.guice [458]
+  Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext 4 0 2022-04-08 10:55:18.732
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext [462]
+  Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [458]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.proposals 4 0 2022-04-08 10:55:18.736
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.proposals [463]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [462]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [458]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Import-Package: org.eclipse.fx.ide.css.ui.extapi
+    -> Export-Package: org.eclipse.fx.ide.css.ui.extapi; bundle-symbolic-name="org.eclipse.fx.ide.css.ui"; bundle-version="3.7.0.202010120832"; version="0.0.0"; x-internal:="true"
+       org.eclipse.fx.ide.css.ui [467]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.ui 4 0 2022-04-08 10:55:18.740
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.ui [464]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [458]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [462]
+         Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.ui 4 0 2022-04-08 10:55:18.744
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.ui [467]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [458]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jface 2 0 2022-04-08 10:55:26.413
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-08 10:55:26.413
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7f94541b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7bebad0d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-08 10:55:26.413
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6c4d0224,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6f27730b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-04-08 10:55:30.737
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\vadti'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
