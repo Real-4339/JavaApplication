@@ -1,21 +1,22 @@
 # Environment setup
 
-Example:
+Enviroment:
 
-* Eclipse Java EE IDE for Web Developers, version: Oxygen.3a Release (4.7.3a) Build id: 20180405-1200
+* Eclipse IDE for Java Developers, version: Version: 2022-03 (4.23.0) Build id: 20220310-1457
 
 (Change this Example:)
 
-* JDK 16
-* JavaFX 16
+* JDK 17
+* JavaFX 18
 * Scene Builder
-* MySQL Connector/J 8.0.23
+* SQLite JDBC 3.36.0.3
 
 ## Installation
 
 Example:
 
-* Make sure MySQL is installed properly and running at port 3306 with username 'root' and password 'root'
+* Make sure SQLite Studio is installed properly.
+* Change URL in SqlDB class to work properly (DriverManager.getConnection();)
 
 ## Database
 
