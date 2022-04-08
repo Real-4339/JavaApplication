@@ -9,7 +9,7 @@ Its a model of electronic auction, namely, First-price sealed-bid auction.
 
 Project status: 30% is ready.
 ### Screenshot
-![Image text](/path/to/the/screenshot.png)
+![Image text](oop-2022-str-17-c-dakic-Real-4339/Documentation/prototypes/)
 ***
 
 ## Table of Contents
