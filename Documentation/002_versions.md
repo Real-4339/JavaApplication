@@ -2,11 +2,24 @@
 
 Project contains the following fully functional versions:
 
-Example:
+Versions:
 
 * [v1.0.2](jar/v1.0.0.2.jar) - write location of the compiled program - JAR file
 * [v1.0.1](jar/v1.0.0.2.jar)  - write location of the compiled program - JAR file
-* [v1.0.0](jar/v1.0.0.2.jar)  - write location of the compiled program - JAR file
+* [v1.0.0](jar/v1.0.0.jar)  - JAR file
+
+## How to run
+
+1. Open cmd:
+```
+cd ../Documentation/Jar
+```
+2. java --module-path "here put path where do you contain javafx" --add-modules javafx.controls,javafx.fxml
+
+```
+java --module-path "I:\JavaFX\javafx-sdk-18\lib" --add-modules javafx.controls,javafx.fxml -jar v1.0.0.jar
+```
+3. And run it
 
 ## Change log
 
@@ -39,8 +52,6 @@ Added:
 * Created data handler and used serialization in it
 
 ## Version 1.0.0
-
-Replace using this Example:
 
 Added:
 
