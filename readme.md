@@ -1,76 +1,57 @@
 # I'm the creator of this project - Vadym Tilihuzov
 
 ## Art installation auction
-***
-Its a model of electronic auction, namely, First-price sealed-bid auction.
 
 ## General Info
 ***
-Write down general information about your project. It is a good idea to always put a project status in the readme file. This is where you can add it. 
+Its a model of electronic auction, namely, First-price sealed-bid auction.
+
+Project status: 30% is ready.
 ### Screenshot
 ![Image text](/path/to/the/screenshot.png)
 ***
-### Practise zone:
 
 ## Table of Contents
+
 1. [General Info](#general-info)
 2. [Technologies](#technologies)
 3. [Installation](#installation)
 4. [Collaboration](#collaboration)
-5. [FAQs](#faqs)
+5. [Fulfillment of criteria](#fulfillment-of-criteria)
+6. [Certain implementations](#Certain-implementations)
+7. [Main criteria](#Main-criteria)
+8. [Secondary criteria](#Secondary-criteria)
+9. [FAQs](#faqs)
+
+***
+
+* [Project documentation](Documentation/000_project_documentation.md)
+  * [JavaDoc documentation](Documentation/000_project_documentation.md)
+* [UML diagrams](Documentation/001_uml_diagrams.md)
+* [Versions](Documentation/002_versions.md)
+* [Technical details](Documentation/003_tech_details.md)
+* [Simulation and demonstration](Documentation/004_simulation_and_demonstration.md)  
+  * [Video demonstration](Documentation/004_simulation_and_demonstration.md)
 
 ## Technologies
 ***
 A list of technologies used within the project:
-* [Technology name](https://example.com): Version 12.3 
-* [Technology name](https://example.com): Version 2.34
-* [Library name](https://example.com): Version 1234
+* [SQLite](https://sqlite.org/index.html): Version 3.3.3 
+* [Java Language](https://www.oracle.com/java/technologies/downloads/): Version 4.23.0
+* [JavaFX](https://openjfx.io/): Version 18, SDK, x64, Windows
 
 ## Installation
 ***
 A little intro about the installation. 
 ```
-$ git clone https://example.com
-$ cd ../path/to/the/file
-$ npm install
-$ npm start
-```
-Note: To use the application in a special environment use ```lorem ipsum``` to start.
+$ git clone https://github.com/OOP-FIIT/oop-2022-str-17-c-dakic-Real-4339.git
+$ cd ../oop-2022-str-17-c-dakic-Real-4339/Project/
 
+```
 ## Collaboration
 ***
-Provide instructions on how to collaborate with your project.
-> Maybe you want to write a quote in this part. 
-> Should it encompass several lines?
-> This is how you do it.
-
-## FAQs
-***
-A list of frequently asked questions
-1. **This is a question in bold**
-Answer to the first question with _italic words_. 
-2. __Second question in bold__ 
-To answer this question, we use an unordered list:
-* First point
-* Second Point
-* Third point
-3. **Third question in bold**
-Answer to the third question with *italic words*.
-4. **Fourth question in bold**
-| Headline 1 in the tablehead | Headline 2 in the tablehead | Headline 3 in the tablehead |
-|:--------------|:-------------:|--------------:|
-| text-align left | text-align center | text-align right |
-
-***
-## Table of Contents
-
-* [Project documentation](Documentation/000_project_documentation)
-  * [JavaDoc documentation](Documentation/000_project_documentation)
-* [UML diagrams](Documentation/001_uml_diagrams)
-* [Versions](Documentation/002_versions)
-* [Technical details](Documentation/003_tech_details)
-* [Simulation and demonstration](Documentation/004_simulation_and_demonstration)  
-  * [Video demonstration](Documentation/004_simulation_and_demonstration)
+Make a pull request
+> Im open to all new. 
 
 ## Fulfillment of criteria
 
@@ -99,3 +80,21 @@ Example:
 * Observer
   * RunningStorage.java # 10
 * RTTI
+
+## FAQs
+***
+A list of frequently asked questions
+1. **This is a question in bold**
+Answer to the first question with _italic words_. 
+2. __Second question in bold__ 
+To answer this question, we use an unordered list:
+* First point
+* Second Point
+* Third point
+3. **Third question in bold**
+Answer to the third question with *italic words*.
+4. **Fourth question in bold**
+| Headline 1 in the tablehead | Headline 2 in the tablehead | Headline 3 in the tablehead |
+|:--------------|:-------------:|--------------:|
+| text-align left | text-align center | text-align right |
+
