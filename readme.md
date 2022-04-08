@@ -2,8 +2,9 @@
 
 ## Art installation auction
 
-## General Info
 ***
+## General Info:
+
 Its a model of electronic auction, namely, First-price sealed-bid auction.
 
 Project status: 30% is ready.
