@@ -53,10 +53,26 @@ public class SqlDB {
     
     // Fun to put info to a DB from a List
     public void User_in(ArrayList<User> guy) throws SQLException {
-        statement.executeUpdate("INSERT INTO User(Login, Password, FirstName, SecondName, Balance, Spent)" + "VALUES ('"+ guy.get(0).getLogin()+"', '"+ guy.get(0).getPass()+"', '"+ guy.get(0).getfirstName()+"', '"+ guy.get(0).getsecName()+"', 0, 0)");
+        statement.executeUpdate("INSERT INTO User(Login, Password, FirstName, SecondName, Balance, Spent)" 
+        + "VALUES ('"+ guy.get(0).getLogin()+"', '"+ guy.get(0).getPass()+"', '" 
+        + guy.get(0).getfirstName()+"', '"+ guy.get(0).getsecName()+"', 0, 0)");
     }
     // Fun to put info to a DB from a List, but with email
     public void User_inEmail(ArrayList<User> guy) throws SQLException {
-        statement.executeUpdate("INSERT INTO User(Login, Password, FirstName, SecondName, Email, Balance, Spent)" + "VALUES ('"+ guy.get(0).getLogin()+"', '"+ guy.get(0).getPass()+"', '"+ guy.get(0).getfirstName()+"', '"+ guy.get(0).getsecName()+"', '"+ guy.get(0).getEmail()+"', 0, 0)");
+        statement.executeUpdate("INSERT INTO User(Login, Password, FirstName, SecondName, Email, Balance, Spent)" 
+        + "VALUES ('"+ guy.get(0).getLogin()+"', '"+ guy.get(0).getPass()+"', '" 
+        + guy.get(0).getfirstName()+"', '"+ guy.get(0).getsecName()+"', '"+ guy.get(0).getEmail()+"', 0, 0)");
     }
+    
+    public void User_updateBalance(String guy, int balance, int index) throws SQLException {
+    	String SQLREQUEST = "UPDATE User SET Balance =? WHERE Login = ?";
+    	PreparedStatement state = connection.prepareStatement(SQLREQUEST);
+    	state.setInt(1, balance);
+    	state.setString(2, guy);
+    	state.executeUpdate();
+    	
+    	//statement.executeUpdate(SQLREQUEST);
+    	//statement = connection.prepareStatement(SQLREQUEST); 
+    }
+  
 }
