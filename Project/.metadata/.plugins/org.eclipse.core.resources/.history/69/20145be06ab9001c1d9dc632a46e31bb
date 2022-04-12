@@ -1,0 +1,8 @@
+package independent;
+static class Inner {
+      private int a = 10;
+      public void demoMethod() {
+         System.out.println("Hi to all guys!");
+         System.out.println("Can access properties of outer class as : "+ str);
+      }
+   }

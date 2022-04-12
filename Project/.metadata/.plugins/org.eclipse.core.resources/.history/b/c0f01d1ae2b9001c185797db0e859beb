@@ -1,0 +1,10 @@
+package gui.log;
+	
+public class LogginGui {
+
+    public void start() throws Exception {
+        System.out.println(getClass());
+        //Parent root = FXMLLoader.load(getClass().getResource("/resources/log_form.fxml"));
+        
+    }
+}

@@ -1,0 +1,26 @@
+package program;
+
+import database.SqlDB;
+import gui.log.LogginGui;
+import gui.main.MainGui;
+import independent.Checker;
+import independent.Storage;
+
+public class Main {
+	
+	// Making main storage and sql connection for a program
+	SqlDB sql = new SqlDB();
+    Storage polka = new Storage();   
+	
+	public static void main(String[] args) {
+		
+	    
+		LogginGui log = new LogginGui();
+		//MainGui main = new MainGui();
+		log.pusk(args); 
+		
+	    if (Checker.isFlagMain())
+		main.pusk(args);
+	}
+
+}

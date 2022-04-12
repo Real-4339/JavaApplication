@@ -1,0 +1,17 @@
+package independent;
+
+public class InnerChecker {
+
+	static class Checker {
+		private boolean flagMain = false;
+		
+		public boolean isFlagMain() {
+			return this.flagMain;
+		}
+	}
+	
+	public void is(Checker checkk) {
+	    Checker check = new Checker();
+	    checkk = check;
+	}
+}

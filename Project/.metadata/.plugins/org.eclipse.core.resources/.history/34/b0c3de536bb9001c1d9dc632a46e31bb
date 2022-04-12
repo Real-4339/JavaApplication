@@ -1,0 +1,8 @@
+package independent;
+
+public class InnerChecker {
+
+	static class Checker {
+		private boolean flagMain = false;
+	}
+}

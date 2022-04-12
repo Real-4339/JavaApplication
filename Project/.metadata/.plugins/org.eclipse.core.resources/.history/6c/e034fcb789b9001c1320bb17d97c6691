@@ -1,0 +1,43 @@
+package gui.main;
+
+import javafx.application.Application;
+import javafx.scene.*;
+import javafx.scene.control.*;
+import javafx.scene.layout.*;
+import javafx.stage.Stage;
+
+public class MainGui extends Application {
+	
+	private Button buy = new Button("Buy an installation");
+	private Button refill = new Button("Fund your account");
+	private TextField refillField = new TextField();
+	private TextField rate = new TextField();
+	private Label rateLabel = new Label("Your rate: ");
+	private TextArea output = new TextArea();
+	private ScrollPane scroll = new ScrollPane();
+	
+	public void start(Stage mainWindow) {
+		mainWindow.setTitle("Clash");
+		
+		FlowPane pane = new FlowPane();
+		
+		pane.getChildren().add(buy);
+		pane.getChildren().add(rateLabel);
+		pane.getChildren().add(rate);
+		pane.getChildren().add(output);
+		pane.getChildren().add(refill);
+		pane.getChildren().add(refillField);
+		
+		scroll.setContent(pane);	
+		
+		//buy.setOnAction(e -> );
+
+		mainWindow.setScene(new Scene(pane, 400, 250));
+		mainWindow.show();
+	}
+	
+	public void pusk(String[] args) {
+		launch(args);
+	}
+
+}

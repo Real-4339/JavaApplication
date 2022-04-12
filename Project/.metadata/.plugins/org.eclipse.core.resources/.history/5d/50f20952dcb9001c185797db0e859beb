@@ -1,0 +1,24 @@
+package gui.log;
+	
+import program.Main;
+
+
+public class LogginGui {
+
+    
+    public void start() throws Exception {
+        System.out.println(getClass());
+        //Parent root = FXMLLoader.load(getClass().getResource("/resources/log_form.fxml"));
+        Main.setRoot("/resources/log_form");
+        
+        Main.stage.setTitle("User Login");
+        
+
+    }
+    
+//	public void pusk(String[] args) { 
+//		  launch(args); 
+//	}
+	
+
+}

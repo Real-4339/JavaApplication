@@ -1,0 +1,27 @@
+package gui.main;
+
+import javafx.application.Application;
+import javafx.scene.*;
+import javafx.stage.Stage;
+
+public class MainGui extends Application {
+	private Button createWarriorsButton = new Button("Create Warriors");
+	
+	public void start(Stage mainWindow) {
+		mainWindow.setTitle("Clash");
+		
+		FlowPane pane = new FlowPane();
+		
+		pane.getChildren().add(nextClashWindowButton);
+		
+		nextClashWindowButton.setOnAction(e -> new ClashWindow());
+
+		mainWindow.setScene(new Scene(pane, 400, 250));
+		mainWindow.show();
+	}
+	
+	public void pusk(String[] args) {
+		launch(args);
+	}
+
+}
