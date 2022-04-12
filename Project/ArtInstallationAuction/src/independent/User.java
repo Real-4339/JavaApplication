@@ -29,6 +29,8 @@ public class User {
     private void setSpent(double Spent){ spent = Spent;}
 
 
+    public User () {}
+    
     public User (String login, String pass, String firstName, String secName, int balance)
     {
        this.setfirstName(firstName);
@@ -37,7 +39,7 @@ public class User {
        this.setPass(pass);
        this.setBalance(balance);
     }
-
+    
     public User (String login, String pass, String firstName, String secName, double balance, double spent)
     {
     	this.setfirstName(firstName);
