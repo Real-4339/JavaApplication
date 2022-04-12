@@ -1,8 +1,11 @@
 package gui.log;
 
+import java.io.IOException;
 import java.sql.SQLException;
 
 import database.SqlDB;
+import gui.main.MainGui;
+import independent.Checker;
 import independent.Storage;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -17,6 +20,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.stage.Window;
+import program.Main;
 
 
 public class LogController {
@@ -76,18 +80,21 @@ public class LogController {
 	        String loginName = loginNameField.getText();
 	        String password = passwordField.getText();
 
-	        //Starting first DB connection and initializing User list 
-	        SqlDB sql = new SqlDB(true);
-	        Storage userInfo = new Storage(sql);
-	        userInfo.updateUsers();
+	        //Initializing User list 
+	        Main.polka.updateUsers();
 	        
 	        // Making a flag to control enter to main app
-	        boolean flag = this.validate(loginName, password, userInfo);
+	        boolean flag = this.validate(loginName, password, Main.polka);
 
 	        if (!flag) {
 	            infoBox("Please enter correct Login and Password", null, "Failed");
 	        } else {
-	            infoBox("Login Successful!", null, "Failed");
+	            infoBox("Login Successful!", null, "Failed"); // Up to main
+	            
+                String logindex = loginNameField.getText();
+                
+                int index = Main.polka.updateActiveUsers(logindex);
+                MainGui gui = new MainGui(logindex, index);
 	        }
 	    }
 
@@ -110,7 +117,7 @@ public class LogController {
 	        alert.show();
 	    }
 	    
-	    // Controlling users input and db
+	    // Controlling users input and DB
 	    private boolean validate(String log, String pass, Storage user) {
 	    	
 	    	 for (int i = 0; i < user.getUsers().size(); i++) {
@@ -138,12 +145,6 @@ public class LogController {
 	   	    } catch(Exception e) {
 	   	        e.printStackTrace();
 	   	    }
-//		try {
-//			RegistrationWindow reg = new RegistrationWindow();
-//		} catch (Exception e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
     }
 	
 	
@@ -189,12 +190,9 @@ public class LogController {
        	 return;
         }
         
-        //making a connection to a db and making storage to hold info
-        SqlDB sql = new SqlDB(true);
-        Storage store = new Storage(sql);
-        
-        
+ 
         // Old fun to call sql fun to add a user
+        
 //        if (EmailField.getText().isBlank()) {
 //        	
 //        	store.setArray(LoginField.getText(), PasswordField.getText(), FirstNameField.getText(), SecondNameField.getText());
@@ -213,7 +211,7 @@ public class LogController {
         		if (EmailField.getText().isBlank()) {
               
                   	try {
-						store.setArray(LoginField.getText(), PasswordField.getText(), FirstNameField.getText(), SecondNameField.getText());
+                  		Main.polka.setArray(LoginField.getText(), PasswordField.getText(), FirstNameField.getText(), SecondNameField.getText());
 					} catch (SQLException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
@@ -224,7 +222,7 @@ public class LogController {
                   }
                   
               	try {
-					store.setArrayEmail(LoginField.getText(), PasswordField.getText(), FirstNameField.getText(), SecondNameField.getText(), EmailField.getText());
+              		Main.polka.setArrayEmail(LoginField.getText(), PasswordField.getText(), FirstNameField.getText(), SecondNameField.getText(), EmailField.getText());
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
