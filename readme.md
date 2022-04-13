@@ -1,4 +1,4 @@
-# I'm the creator of this project - Vadym Tilihuzov
+# Vadym Tilihuzov
 
 ## Art installation auction
 
