@@ -1,0 +1,15 @@
+package User;
+
+public class User_Info {
+	
+	static String login;
+	static String pass;
+	static String Fname;
+	static String Sname;
+	static String Email;
+	static String Adress;
+	static int Card;
+	static String Iban;
+	static Double Balance;
+	static Double Spent;
+}

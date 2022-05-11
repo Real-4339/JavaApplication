@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;gui.main.MainController&apos; to &apos;HomePageController&apos;&#x0D;&#x0A;- Original project: &apos;ArtInstallationAuction&apos;&#x0D;&#x0A;- Original element: &apos;gui.main.MainController&apos;&#x0D;&#x0A;- Renamed element: &apos;gui.main.HomePageController&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MainController&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;gui.main{MainController.java[MainController" matchStrategy="1" name="HomePageController" qualified="false" references="true" similarDeclarations="false" stamp="1652262224174" textual="false" version="1.0"/>
+</session>

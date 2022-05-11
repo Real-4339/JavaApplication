@@ -1,0 +1,78 @@
+package gui.main;
+
+import java.io.IOException;
+
+import com.jfoenix.controls.JFXButton;
+
+import javafx.event.ActionEvent;
+import javafx.event.Event;
+import javafx.fxml.FXML;
+import javafx.scene.control.Hyperlink;
+import javafx.scene.control.Label;
+import program.Main;
+
+public class GuestsController {
+	
+	@FXML
+    private Label backLabel;
+    @FXML
+    private JFXButton Logobtn;
+    @FXML
+    private Label usernameLabel;
+    @FXML
+    private Hyperlink logoutLink;
+    
+    @FXML
+    private void logout(Event event) {
+        //new homepage.HomePageController().logout(event);
+    }
+
+    @FXML
+    public void goToHomePage(Event event) {
+    	Main.setStageTitle("Auction");
+    	try {
+			Main.setRoot1(Paths.HOMEPAGEVIEW);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        //new checkin.CheckInController().goToHomePage(event);
+    }
+
+    @FXML
+    private void goTO_check_in(ActionEvent event) {
+        //new homepage.HomePageController().goTO_check_in(event);
+    }
+
+    @FXML
+    private void goTo_auction_buying(ActionEvent event) {
+        //new homepage.HomePageController().goTo_room_booking(event);
+    }
+
+    @FXML
+    private void goTo_cancel_auction(ActionEvent event) {
+        //new homepage.HomePageController().goTo_cancel_booking(event);
+    }
+
+    @FXML
+    private void goTo_Delete_account(Event event) {
+        //new homepage.HomePageController().goTo_Check_out(event);
+    }
+
+    @FXML
+    private void goTo_Auctions(ActionEvent event) {
+    	Main.setStageTitle("Auction");
+    	try {
+			Main.setRoot1(Paths.AUCTIONVIEW);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    }
+
+    @FXML
+    private void goTo_guests(ActionEvent event) {
+        //new homepage.HomePageController().goTo_Guests(event);
+    }
+
+}

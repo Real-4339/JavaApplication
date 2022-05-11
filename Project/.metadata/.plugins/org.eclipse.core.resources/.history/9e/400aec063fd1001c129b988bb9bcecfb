@@ -1,0 +1,105 @@
+package gui.main;
+
+import java.io.IOException;
+
+import javafx.event.ActionEvent;
+import javafx.event.Event;
+import javafx.fxml.FXML;
+import program.Main;
+
+public class CancelAuctionController {
+	
+	@FXML
+    private Label back;
+    @FXML
+    private JFXButton Logobtn;
+    @FXML
+    private Label usernameLabel;
+    @FXML
+    private Hyperlink logoutLink;
+
+    @FXML
+    private TextField roomNoField;
+    @FXML
+    private JFXButton clearbtn;
+    @FXML
+    private JFXButton CacnelBookingBTN;
+    @FXML
+    private JFXButton roomBTN;
+    @FXML
+    private JFXButton guestsBTN;
+
+	    @FXML
+	    private void logout(Event event) {
+	        
+	    }
+
+	    @FXML
+	    public void goToHomePage(Event event) {
+	    	Main.setStageTitle("Home");
+	    	try {
+				Main.setRoot1(Paths.HOMEPAGEVIEW);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	       
+	    }
+
+	    @FXML
+	    private void goTO_user_settings(ActionEvent event) {
+	       
+	    }
+
+	    @FXML
+	    private void goTo_auction_buying(ActionEvent event) {
+	      
+	    }
+
+	    @FXML
+	    private void goTo_cancel_auction(ActionEvent event) {
+	    	Main.setStageTitle("Cancel");
+	    	try {
+				Main.setRoot1(Paths.CANCELBOOKINGVIEW);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	    }
+	    }
+
+	    @FXML
+	    private void goTo_Delete_account(Event event) {
+	        
+	    }
+
+	    @FXML
+	    private void goTo_Auctions(ActionEvent event) {
+	    	Main.setStageTitle("Auction");
+	    	try {
+				Main.setRoot1(Paths.AUCTIONVIEW);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	    }
+
+	    @FXML
+	    private void goTo_guests(ActionEvent event) {
+	    	Main.setStageTitle("Guests");
+	    	try {
+				Main.setRoot1(Paths.GUESTSVIEW);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	    }
+	    
+	    @FXML
+	    private void CancelBookingAction(ActionEvent event) { }
+	    
+	    @FXML
+	    private void clearAction(ActionEvent event) {}
+	    
+	    
+}
