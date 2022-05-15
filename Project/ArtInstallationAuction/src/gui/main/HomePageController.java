@@ -32,7 +32,7 @@ import javafx.stage.Stage;
 import program.Main;
 //import static login.LoginController.decorator;
 //import static login.LoginController.window;
-//import project.switchScreen; implements Initializable
+//import project.switchScreen; 
 
 public class HomePageController implements Initializable {
 	User guest;
@@ -45,13 +45,13 @@ public class HomePageController implements Initializable {
 	@FXML
     private JFXButton logOut;
 	@FXML
-    private JFXButton check_in_Buttton;
+    private JFXButton user_settings_Buttton;
     @FXML
-    private JFXButton check_out_Buttton;
+    private JFXButton del_acc_Buttton;
     @FXML
-    private JFXButton room_booking_Buttton;
+    private JFXButton auction_buying_Buttton;
     @FXML
-    private JFXButton cancel_booking_Buttton;
+    private JFXButton cancel_auction_Buttton;
     @FXML
     private Label usernameLabel11;
     @FXML
@@ -64,10 +64,6 @@ public class HomePageController implements Initializable {
     private ProgressIndicator available_par;
     @FXML
     private ProgressIndicator reserved_par;
-    @FXML
-    private JFXButton roomBTN;
-    @FXML
-    private JFXButton guestsBTN;
     //=============
     public static JFXDecorator decorator1;
     
@@ -107,30 +103,9 @@ public class HomePageController implements Initializable {
     @FXML
     public void logout(ActionEvent event) {
         System.out.println("Log-Out label clicked");
-        
         Stage stage = (Stage)Main.hash.get(index).get(0);
+        Main.polka.deleteActiveUser(index);
         stage.close();
-        
-		/*
-		 * try { //Load new FXML and assign it to scene Parent root =
-		 * FXMLLoader.load(getClass().getResource(Paths.LOGINVIEW)); //create empty new
-		 * stage Stage window2 = new Stage(); //set layout properties JFXDecorator
-		 * decorator = new JFXDecorator(window2, root, false, false, true); //Create new
-		 * scene and add new layout in it Scene scene = new Scene(decorator); // add css
-		 * file to the scene String uri =
-		 * getClass().getResource("dectaorStyle.css").toExternalForm();
-		 * scene.getStylesheets().add(uri); //stage properties int width = 690, height =
-		 * 620; window2.setScene(scene); window2.setMaxHeight(height);
-		 * window2.setMinHeight(height); window2.setMaxWidth(width);
-		 * window2.setMinWidth(width); Image icon = new
-		 * Image(getClass().getResourceAsStream("/img/login_icon.png"));
-		 * window2.getIcons().add(icon); window2.show(); //set foucus in the window not
-		 * in close and maximize button root.requestFocus(); //close the old stage
-		 * ((Stage) ((Node) event.getSource()).getScene().getWindow()).close();
-		 * 
-		 * } catch (Exception ex) { System.out.println("Error load login FXML !");
-		 * System.out.println(ex.getMessage()); ex.printStackTrace(); }
-		 */
     }
 
     @FXML
@@ -150,9 +125,9 @@ public class HomePageController implements Initializable {
     @FXML
     public void goTo_auction_buying(Event event) {
         System.out.println("Buying Auction button clicked");
-
+        Main.polka.UserTO(User_single.User_Info.getInstance(), guest);
         try {
-            
+        	Main.setRoot(Paths.AUCTIONBUYVIEW, (Stage)Main.hash.get(index).get(0), (Scene)Main.hash.get(index).get(1));
         } catch (Exception ex) {
             System.out.println("Error load RoomBooking FXML !");
             System.out.println(ex.getMessage());

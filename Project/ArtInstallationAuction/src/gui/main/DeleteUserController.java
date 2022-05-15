@@ -48,7 +48,7 @@ public class DeleteUserController implements Initializable {
     }
 
     @FXML
-    private void DeleteAction(ActionEvent event) throws SQLException {
+    private void DeleteAction(ActionEvent event) throws SQLException, CannotDeleteYourself {
         if ("".equals(UserNameField.getText())) {
             Alert alert = new Alert(Alert.AlertType.WARNING, "", ButtonType.OK);
             alert.setHeaderText("Fill all fields ...");
@@ -63,7 +63,7 @@ public class DeleteUserController implements Initializable {
             alert.setTitle("Error");
             ((Stage) alert.getDialogPane().getScene().getWindow()).getIcons().add(new Image("/img/WARNING_PNG.png"));
             alert.showAndWait();
-            return;
+            throw new CannotDeleteYourself();
         }
         
         Main.polka.deleteUserLog(UserNameField.getText());

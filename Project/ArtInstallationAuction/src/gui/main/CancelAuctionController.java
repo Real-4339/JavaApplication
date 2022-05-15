@@ -60,6 +60,7 @@ public class CancelAuctionController implements Initializable{
 	    @FXML
 	    private void logout(Event event) {
 	    	Stage stage = (Stage)Main.hash.get(index).get(0);
+	    	Main.polka.deleteActiveUser(index);
 	        stage.close();
 	    }
 
@@ -100,7 +101,14 @@ public class CancelAuctionController implements Initializable{
 
 	    @FXML
 	    private void goTo_auction_buying(ActionEvent event) {
-	      
+	    	Main.polka.UserTO(User_single.User_Info.getInstance(), guest);
+	        try {
+	        	Main.setRoot(Paths.AUCTIONBUYVIEW, (Stage)Main.hash.get(index).get(0), (Scene)Main.hash.get(index).get(1));
+	        } catch (Exception ex) {
+	            System.out.println("Error load RoomBooking FXML !");
+	            System.out.println(ex.getMessage());
+	            ex.printStackTrace();
+	        }
 	    }
 
 	    @FXML
