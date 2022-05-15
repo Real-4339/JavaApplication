@@ -1,5 +1,6 @@
 package gui.log;
 
+import java.io.IOException;
 import java.sql.SQLException;
 
 import User_single.User_Info;
@@ -87,23 +88,38 @@ public class LogController {
 	            infoBox("Please enter correct Login and Password", null, "Failed");
 	        } else {
 	            infoBox("Login Successful!", null, "Success"); // Up to main
+	       
 	            
-	            try {
-	            	
-	            	System.out.println(getClass());
-	            	Main.polka.updateActiveUsers(loginName);
-	            	Main.polka.updateProducts();
-	            	int index = Main.polka.findUserID(loginName);
-	            	if (User_Info.getInstance().getLogin().equals("root"))
-	            	Main.startMainRoot(index);
-	            	else 
-	            	Main.startMain(index);
-	            	
-	            	
-	            	
-	            	//System.out.print(User.User_Info.getInstance().getLogin());
-	            	
-	                
+	            System.out.println(getClass());
+            	Main.polka.updateActiveUsers(loginName);
+            	Main.polka.updateProducts();
+            	int index = Main.polka.findUserID(loginName);
+            	
+	            	Thread th = new Thread() {
+	                	public void run()  {
+	                      	
+	                      	if (User_Info.getInstance().getLogin().equals("root"))
+	                      		Platform.runLater(() -> {
+									try {
+										Main.startMainRoot(index);
+									} catch (IOException e) {
+										// TODO Auto-generated catch block
+										e.printStackTrace();
+									}
+								}); 
+	        	            else 
+	        	            	Platform.runLater(() -> {
+									try {
+										Main.startMain(index);
+									} catch (IOException e) {
+										// TODO Auto-generated catch block
+										e.printStackTrace();
+									}
+								}); 
+	                	}
+	                };
+	                th.setDaemon(true);
+	                th.start();
 		   			
 //		   			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/resources/HomePage.fxml"));
 //		   	        Parent root1 = (Parent) fxmlLoader.load();
@@ -111,9 +127,7 @@ public class LogController {
 //		   	        stage.setTitle("Home");
 //		   	        stage.setScene(new Scene(root1));  
 //		   	        stage.show();
-		   	    } catch(Exception e) {
-		   	        e.printStackTrace();
-		   	    }
+		   	  
 	            
                 //MainGui gui = new MainGui(logindex, index);
 	        }
