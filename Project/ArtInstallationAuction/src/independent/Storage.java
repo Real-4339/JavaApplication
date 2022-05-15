@@ -114,19 +114,31 @@ public class Storage {
 		
 		for (int a = 0; a < all.size(); a++) {
 	        if (all.get(a).getID() == index) {
-	        	all.set(a, null);
+	        	all.remove(a);
 	        }
 	    }
 		
 		for(int a = 0; a < active.size(); a++)
 		{
 			if (active.get(a).getID() == index) {
-				active.set(a, null);
+				active.remove(a);
 	        }
 		}
 		
 		sql.User_delete(index);
 		updateUsers();
+	}
+	
+public void deleteActiveUser (int index) {
+		
+		
+		for(int a = 0; a < active.size(); a++)
+		{
+			if (active.get(a).getID() == index) {
+				active.remove(a);
+	        }
+		}
+		
 	}
 	
 public void deleteUserLog (String login) throws SQLException {
@@ -135,14 +147,14 @@ public void deleteUserLog (String login) throws SQLException {
 		for (int a = 0; a < all.size(); a++) {
 	        if (all.get(a).getLogin().equals(login)) {
 	        	index = all.get(a).getID();
-	        	all.set(a, null);
+	        	all.remove(a);
 	        }
 	    }
 		
 		for(int a = 0; a < active.size(); a++)
 		{
 			if (active.get(a).getLogin().equals(login)) {
-				active.set(a, null);
+				active.remove(a);
 	        }
 		}
 		
