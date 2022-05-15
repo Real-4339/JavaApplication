@@ -1,0 +1,12 @@
+package Patterns;
+
+public class Winner implements Follower{
+	
+	String won = "Won";
+	
+	public String getWait() {return won;}
+	
+	public void inform() {
+			
+	}
+}

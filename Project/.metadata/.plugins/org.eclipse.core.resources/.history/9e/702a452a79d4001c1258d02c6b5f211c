@@ -1,0 +1,13 @@
+package Patterns;
+
+public class Report implements Follower{
+	
+	String wait = "Waiting..";
+	
+	public String getWait() {return wait;}
+	
+	public void inform() {
+		
+		System.out.println(" Open ");
+	}
+}

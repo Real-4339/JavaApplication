@@ -1,0 +1,106 @@
+package independent;
+
+public class User {
+	private int ID;
+    private String login;
+    private String password;
+    private String Name;
+    private String Surname;
+    private String Email;
+    private double balance;
+    private double spent;
+
+    public String getLogin(){return login;}
+    public String getPass(){return password;}
+    public String getName(){return Name;}
+    public String getSurname(){return Surname;}
+    public String getEmail(){return Email;}
+   
+    public double getBalance(){return balance;}
+    public double getSpent(){return spent;}
+    public int getID() {return ID;}
+   
+    
+    private void setLogin(String Login){ login = Login;}
+    private void setPass(String Password){ password = Password;}
+    private void setName(String Name){ this.Name = Name;}
+    private void setSurname(String Name){ Surname = Name;}
+    private void setEmail(String Email){ this.Email = Email;}
+    
+    private void setBalance(double Balance){ balance = Balance;}
+    private void setSpent(double Spent){ spent = Spent;}
+    public void setID(int id) {this.ID = id;}
+
+
+    public User () {}
+    
+    public User (String login, String pass, String firstName, String secName, int balance)
+    {
+       this.setName(firstName);
+       this.setSurname(secName);
+       this.setLogin(login);
+       this.setPass(pass);
+       this.setBalance(balance);
+    }
+    
+    public User (String login, String pass, String firstName, String secName, double balance, double spent)
+    {
+    	this.setName(firstName);
+        this.setSurname(secName);
+        this.setLogin(login);
+        this.setPass(pass);
+       this.setBalance(balance);
+       this.setSpent(spent);
+    }
+    
+    public User (int ID,String login, String pass, String firstName, String secName, double balance, double spent)
+    {
+    	this.ID = ID;
+    	this.setName(firstName);
+        this.setSurname(secName);
+        this.setLogin(login);
+        this.setPass(pass);
+       this.setBalance(balance);
+       this.setSpent(spent);
+    }
+
+    public User (int ID, String login, String pass, String firstName, String secName, String Email, double balance, double spent)
+    {
+    	this.setID(ID);
+    	this.setName(firstName);
+        this.setSurname(secName);
+        this.setLogin(login);
+        this.setPass(pass);
+        this.setEmail(Email);
+       this.setBalance(balance);
+       this.setSpent(spent);
+    }
+    
+    public User (String login, String pass, String firstName, String secName, String Email, int balance, int spent)
+    {
+    	this.setName(firstName);
+        this.setSurname(secName);
+        this.setLogin(login);
+        this.setPass(pass);
+        this.setEmail(Email);
+       this.setBalance(balance);
+       this.setSpent(spent);
+    }
+    
+    // Fun to minimize balance from user account
+    public void MinimizeBalance (double price)
+    {
+       balance -= price;
+       spent += price;
+    }
+
+    @Override
+    public String toString() {
+       return "User{" +
+               "name='" + Name + '\'' +
+               ", login='" + login + '\'' +
+               ", balance=" + balance +
+               ", spent=" + spent +
+               '}';
+    }
+ }
