@@ -55,6 +55,8 @@ public class Storage {
 	}
 	
 	public void updateProducts() throws SQLException {
+		products = null;
+		products = new ArrayList();
 		sql.Products_out(products);
 	}
 	
