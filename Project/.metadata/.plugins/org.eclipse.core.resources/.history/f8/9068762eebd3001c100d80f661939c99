@@ -1,0 +1,251 @@
+package gui.main;
+
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXDatePicker;
+import com.jfoenix.controls.JFXDecorator;
+import com.jfoenix.controls.JFXTextField;
+import com.jfoenix.validation.NumberValidator;
+
+import independent.User;
+
+import java.io.IOException;
+import java.net.URL;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.util.Date;
+import java.util.ResourceBundle;
+import java.util.concurrent.TimeUnit;
+import java.util.regex.Pattern;
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
+import javafx.event.ActionEvent;
+import javafx.event.Event;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
+import javafx.scene.control.Hyperlink;
+import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.ToggleGroup;
+import javafx.scene.image.Image;
+import javafx.scene.input.KeyCode;
+import javafx.scene.layout.Border;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+import program.Main;
+
+public class UserController implements Initializable{
+	User guest;
+	private int index;
+	@FXML
+    public Label usernameLabel;
+    @FXML
+    public Hyperlink logoutLink;
+    @FXML
+    public JFXButton Logobtn;
+    @FXML
+    private Label back;
+    @FXML
+    public Label backLabel;
+    @FXML
+    public JFXTextField NameField;
+    @FXML
+    public JFXTextField PhoneField;
+    @FXML
+    public JFXTextField EmailField;
+    @FXML
+    public JFXTextField CityField;
+    @FXML
+    public JFXTextField NationalityField;
+    @FXML
+    public JFXTextField PassportField;
+    @FXML
+    public JFXTextField AddressField;
+    @FXML
+    public JFXTextField CardNumField;
+    @FXML
+    public JFXTextField CVCcodeField;
+    @FXML
+    public JFXButton submitButton;
+    @FXML
+    public JFXButton clearButton;
+    @FXML
+    public RadioButton economyType;
+    @FXML
+    public RadioButton normalType;
+    @FXML
+    public RadioButton vipType;
+    @FXML
+    public RadioButton singleCapacity;
+    @FXML
+    public RadioButton doubleCapacity;
+    @FXML
+    public RadioButton tripleCapacity;
+    @FXML
+    public JFXDatePicker CheckInDatePicker;
+    @FXML
+    public JFXDatePicker CheckoutDatePicker;
+    @FXML
+    public JFXButton searchRoomButtton;
+    @FXML
+    public JFXTextField roomIDField;
+    @FXML
+    public ToggleGroup roomtype;
+    @FXML
+    public ToggleGroup roomCapacity;
+ 
+    //public static Reservation reservation;
+
+    @FXML
+    private JFXButton roomBTN;
+    @FXML
+    private JFXButton guestsBTN;
+    @FXML
+    private Label name_error;
+    @FXML
+    private Label phone_error;
+    @FXML
+    private Label email_error;
+    @FXML
+    private Label address_error;
+    @FXML
+    private Label city_error;
+    @FXML
+    private Label nationality_error;
+    @FXML
+    private Label passport_error;
+    
+    /**
+     * Initializes the controller class.
+     */
+    @Override
+	
+	  public void initialize(URL url, ResourceBundle rb) { //set userName label with the string in login
+       index = User_single.User_Info.getInstance().getID();
+ 	   guest = Main.polka.findUser(User_single.User_Info.getInstance().getLogin());
+ 	   usernameLabel.setText(guest.getName());
+    }
+    
+    @FXML
+    private void logout(Event event) {
+    	Stage stage = (Stage)Main.hash.get(index).get(0);
+        stage.close();
+    }
+
+    @FXML
+    public void goToHomePage(Event event) {
+    	//Main.setStageTitle("Home");
+    	Main.polka.UserTO(User_single.User_Info.getInstance(), guest);
+    	if (guest.getLogin() == "root") {
+    		try {
+    			Main.setRoot(Paths.HOMEPAGEROOTVIEW, (Stage)Main.hash.get(index).get(0), (Scene)Main.hash.get(index).get(1));
+    		} catch (IOException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
+    	}
+    	else {
+	    	try {
+				Main.setRoot(Paths.HOMEPAGEVIEW, (Stage)Main.hash.get(index).get(0), (Scene)Main.hash.get(index).get(1));
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+    	}
+       
+    }
+
+    @FXML
+    private void goTO_user_settings(ActionEvent event) {
+    	//Main.setStageTitle("Settings");
+    	Main.polka.UserTO(User_single.User_Info.getInstance(), guest);
+    	try {
+			Main.setRoot(Paths.SETTINGSVIEW, (Stage)Main.hash.get(index).get(0), (Scene)Main.hash.get(index).get(1));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    }
+
+    @FXML
+    private void goTo_auction_buying(ActionEvent event) {
+      
+    }
+
+    @FXML
+    private void goTo_cancel_auction(ActionEvent event) {
+    	//Main.setStageTitle("Cancel");
+    	Main.polka.UserTO(User_single.User_Info.getInstance(), guest);
+    	try {
+			Main.setRoot(Paths.CANCELBOOKINGVIEW, (Stage)Main.hash.get(index).get(0), (Scene)Main.hash.get(index).get(1));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    }
+    
+
+    @FXML
+    private void goTo_Delete_account(Event event) {
+    	//Main.setStageTitle("Delete");
+    	Main.polka.UserTO(User_single.User_Info.getInstance(), guest);
+    	try {
+			Main.setRoot(Paths.DELETEACCVIEW, (Stage)Main.hash.get(index).get(0), (Scene)Main.hash.get(index).get(1));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    }
+
+    @FXML
+    private void goTo_Auctions(ActionEvent event) {
+    	//Main.setStageTitle("Auction");
+    	Main.polka.UserTO(User_single.User_Info.getInstance(), guest);
+    	try {
+			Main.setRoot(Paths.AUCTIONVIEW, (Stage)Main.hash.get(index).get(0), (Scene)Main.hash.get(index).get(1));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    }
+
+    @FXML
+    private void goTo_guests(ActionEvent event) {
+    	//Main.setStageTitle("Guests");
+    	Main.polka.UserTO(User_single.User_Info.getInstance(), guest);
+    	try {
+			Main.setRoot(Paths.GUESTSVIEW, (Stage)Main.hash.get(index).get(0), (Scene)Main.hash.get(index).get(1));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    }
+    
+    @FXML
+    private void CancelBookingAction(ActionEvent event) { }
+    
+    @FXML
+    private void clearAction(ActionEvent event) {}
+    
+    @FXML
+    private void submitAction(ActionEvent event) {
+    	
+    }
+    
+    @FXML
+    private void clearButtonAction(ActionEvent event) {
+    	
+    }
+    
+    @FXML
+    private void searchRoom(ActionEvent event) {
+    	
+    }
+
+}

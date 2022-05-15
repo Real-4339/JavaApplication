@@ -6562,3 +6562,2436 @@ java.lang.NullPointerException: Cannot invoke "String.lastIndexOf(int)" because 
 	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
 	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
 	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+!SESSION 2022-05-11 19:38:19.389 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.fx.core.guice 4 0 2022-05-11 19:38:22.122
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.core.guice [458]
+  Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext 4 0 2022-05-11 19:38:22.123
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext [462]
+  Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [458]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.proposals 4 0 2022-05-11 19:38:22.127
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.proposals [463]
+  Unresolved requirement: Import-Package: org.eclipse.fx.ide.css.ui.extapi
+    -> Export-Package: org.eclipse.fx.ide.css.ui.extapi; bundle-symbolic-name="org.eclipse.fx.ide.css.ui"; bundle-version="3.7.0.202010120832"; version="0.0.0"; x-internal:="true"
+       org.eclipse.fx.ide.css.ui [467]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [458]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [462]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.ui 4 0 2022-05-11 19:38:22.131
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.ui [464]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [458]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [462]
+         Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.ui 4 0 2022-05-11 19:38:22.135
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.ui [467]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [458]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jface 2 0 2022-05-11 19:38:37.519
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-11 19:38:37.519
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@29b4444a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3ce7a354,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-11 19:38:37.519
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2914a328,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2d34866a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-11 19:38:42.247
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\vadti'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-05-11 23:24:59.516
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionMarkerResolution.checkMarkerResoultion(LSPCodeActionMarkerResolution.java:170)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionMarkerResolution.hasResolutions(LSPCodeActionMarkerResolution.java:192)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.hasResolution(MarkerHelpRegistry.java:264)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.hasResolutions(MarkerHelpRegistry.java:234)
+	at org.eclipse.ui.views.markers.MarkerField.annotateImage(MarkerField.java:87)
+	at org.eclipse.ui.internal.views.markers.MarkerProblemSeverityAndMessageField.update(MarkerProblemSeverityAndMessageField.java:80)
+	at org.eclipse.ui.internal.views.markers.MarkerColumnLabelProvider.update(MarkerColumnLabelProvider.java:57)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:144)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:970)
+	at org.eclipse.ui.internal.views.markers.MarkersTreeViewer.doUpdateItem(MarkersTreeViewer.java:70)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:126)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1048)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:427)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2109)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createTreeItem(AbstractTreeViewer.java:864)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:842)
+	at org.eclipse.jface.viewers.TreeViewer.createChildren(TreeViewer.java:611)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalExpandToLevel(AbstractTreeViewer.java:1821)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.expandToLevel(AbstractTreeViewer.java:1144)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.expandToLevel(AbstractTreeViewer.java:1116)
+	at org.eclipse.ui.internal.views.markers.ExtendedMarkersView.reexpandCategories(ExtendedMarkersView.java:1173)
+	at org.eclipse.ui.internal.views.markers.UIUpdateJob.runInUIThread(UIUpdateJob.java:106)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4035)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3635)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-05-11 23:44:42.547
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionMarkerResolution.checkMarkerResoultion(LSPCodeActionMarkerResolution.java:170)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionMarkerResolution.hasResolutions(LSPCodeActionMarkerResolution.java:192)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.hasResolution(MarkerHelpRegistry.java:264)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.hasResolutions(MarkerHelpRegistry.java:234)
+	at org.eclipse.ui.views.markers.MarkerField.annotateImage(MarkerField.java:87)
+	at org.eclipse.ui.internal.views.markers.MarkerProblemSeverityAndMessageField.update(MarkerProblemSeverityAndMessageField.java:80)
+	at org.eclipse.ui.internal.views.markers.MarkerColumnLabelProvider.update(MarkerColumnLabelProvider.java:57)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:144)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:970)
+	at org.eclipse.ui.internal.views.markers.MarkersTreeViewer.doUpdateItem(MarkersTreeViewer.java:70)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:126)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1048)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:427)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2109)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createTreeItem(AbstractTreeViewer.java:864)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:842)
+	at org.eclipse.jface.viewers.TreeViewer.createChildren(TreeViewer.java:611)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalExpandToLevel(AbstractTreeViewer.java:1821)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.expandToLevel(AbstractTreeViewer.java:1144)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.expandToLevel(AbstractTreeViewer.java:1116)
+	at org.eclipse.ui.internal.views.markers.ExtendedMarkersView.reexpandCategories(ExtendedMarkersView.java:1173)
+	at org.eclipse.ui.internal.views.markers.UIUpdateJob.runInUIThread(UIUpdateJob.java:106)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4035)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3635)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui 4 0 2022-05-11 23:54:14.405
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Graphic is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.graphics.Image.getBounds(Image.java:1262)
+	at org.eclipse.swt.custom.CLabel.getTotalSize(CLabel.java:268)
+	at org.eclipse.swt.custom.CLabel.onPaint(CLabel.java:431)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:234)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1063)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1087)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1072)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1536)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4803)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.ole.win32.COM.VtblCall(Native Method)
+	at org.eclipse.swt.internal.ole.win32.IOleInPlaceObject.InPlaceDeactivate(IOleInPlaceObject.java:24)
+	at org.eclipse.swt.ole.win32.OleClientSite.deactivateInPlaceClient(OleClientSite.java:595)
+	at org.eclipse.swt.ole.win32.OleClientSite.onDispose(OleClientSite.java:941)
+	at org.eclipse.swt.ole.win32.OleClientSite$1.handleEvent(OleClientSite.java:130)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1063)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1087)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1068)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:811)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:925)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:818)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:925)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:818)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:925)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:818)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:925)
+	at org.eclipse.swt.widgets.Canvas.releaseChildren(Canvas.java:168)
+	at org.eclipse.swt.widgets.Decorations.releaseChildren(Decorations.java:713)
+	at org.eclipse.swt.widgets.Shell.releaseChildren(Shell.java:1378)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:818)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:425)
+	at org.eclipse.swt.widgets.Decorations.dispose(Decorations.java:392)
+	at org.eclipse.jface.text.AbstractInformationControl.dispose(AbstractInformationControl.java:500)
+	at org.eclipse.jface.text.AbstractInformationControlManager.disposeInformationControl(AbstractInformationControlManager.java:1278)
+	at org.eclipse.jface.text.AbstractInformationControlManager.dispose(AbstractInformationControlManager.java:1293)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.dispose(AbstractHoverInformationControlManager.java:919)
+	at org.eclipse.jface.text.TextViewerHoverManager.dispose(TextViewerHoverManager.java:367)
+	at org.eclipse.jface.text.TextViewer.handleDispose(TextViewer.java:1880)
+	at org.eclipse.jface.text.source.SourceViewer.handleDispose(SourceViewer.java:791)
+	at org.eclipse.jface.text.source.projection.ProjectionViewer.handleDispose(ProjectionViewer.java:1301)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.handleDispose(JavaSourceViewer.java:460)
+	at org.eclipse.jface.text.TextViewer.lambda$1(TextViewer.java:1741)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:127)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1063)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1087)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1072)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:775)
+	at org.eclipse.swt.custom.StyledText.handleDispose(StyledText.java:6121)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5931)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1063)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1087)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1068)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:811)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:925)
+	at org.eclipse.swt.widgets.Canvas.releaseChildren(Canvas.java:168)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:818)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:925)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:818)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:925)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:818)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:925)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:818)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:925)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:818)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:925)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:818)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:925)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:818)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:425)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.disposeWidget(SWTPartRenderer.java:174)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.disposeWidget(ContributedPartRenderer.java:286)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:938)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:861)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:845)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:893)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:861)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:845)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:900)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:861)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:845)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.disposeWidget(ElementReferenceRenderer.java:113)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:938)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:861)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:845)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:893)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:861)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:845)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:900)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:861)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:845)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:900)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:861)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:845)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:900)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:861)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:845)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:900)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:861)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:845)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:900)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:861)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:845)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:900)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:861)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:845)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:2087)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1719)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:1743)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1743)
+	at org.eclipse.ui.internal.Workbench$11.run(Workbench.java:1108)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1091)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1392)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1392)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1368)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1716)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:1743)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1743)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1752)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$2(WorkbenchWindow.java:503)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:570)
+	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1063)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1087)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1072)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:269)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1552)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4748)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2286)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5015)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4847)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2286)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5015)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4847)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2286)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5015)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3630)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+!SESSION 2022-05-12 11:46:40.370 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.fx.core.guice 4 0 2022-05-12 11:46:58.376
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.core.guice [458]
+  Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext 4 0 2022-05-12 11:46:58.376
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext [462]
+  Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [458]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.proposals 4 0 2022-05-12 11:46:58.380
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.proposals [463]
+  Unresolved requirement: Import-Package: org.eclipse.fx.ide.css.ui.extapi
+    -> Export-Package: org.eclipse.fx.ide.css.ui.extapi; bundle-symbolic-name="org.eclipse.fx.ide.css.ui"; bundle-version="3.7.0.202010120832"; version="0.0.0"; x-internal:="true"
+       org.eclipse.fx.ide.css.ui [467]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [458]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [462]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.ui 4 0 2022-05-12 11:46:58.380
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.ui [464]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [462]
+         Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [458]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.ui 4 0 2022-05-12 11:46:58.384
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.ui [467]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [458]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jface 2 0 2022-05-12 11:47:13.210
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-12 11:47:13.210
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5606d537,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@b5390,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-12 11:47:13.210
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@59831016,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@37f71e8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-12 11:47:18.020
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\vadti'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-05-14 10:24:25.025 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.fx.core.guice 4 0 2022-05-14 10:24:43.750
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.core.guice [458]
+  Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext 4 0 2022-05-14 10:24:43.751
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext [462]
+  Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [458]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.proposals 4 0 2022-05-14 10:24:43.751
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.proposals [463]
+  Unresolved requirement: Import-Package: org.eclipse.fx.ide.css.ui.extapi
+    -> Export-Package: org.eclipse.fx.ide.css.ui.extapi; bundle-symbolic-name="org.eclipse.fx.ide.css.ui"; bundle-version="3.7.0.202010120832"; version="0.0.0"; x-internal:="true"
+       org.eclipse.fx.ide.css.ui [467]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [458]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [462]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.ui 4 0 2022-05-14 10:24:43.755
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.ui [464]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [462]
+         Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [458]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.ui 4 0 2022-05-14 10:24:43.755
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.ui [467]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [458]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jface 2 0 2022-05-14 10:24:49.371
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-14 10:24:49.371
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6c46dc02,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5606d537,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-14 10:24:49.371
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@b5390,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@59831016,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-14 10:24:53.665
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\vadti'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-05-14 11:03:55.473 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.fx.core.guice 4 0 2022-05-14 11:03:57.754
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.core.guice [458]
+  Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext 4 0 2022-05-14 11:03:57.755
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext [462]
+  Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [458]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.proposals 4 0 2022-05-14 11:03:57.759
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.proposals [463]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [462]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [458]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Import-Package: org.eclipse.fx.ide.css.ui.extapi
+    -> Export-Package: org.eclipse.fx.ide.css.ui.extapi; bundle-symbolic-name="org.eclipse.fx.ide.css.ui"; bundle-version="3.7.0.202010120832"; version="0.0.0"; x-internal:="true"
+       org.eclipse.fx.ide.css.ui [467]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.ui 4 0 2022-05-14 11:03:57.759
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.ui [464]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [458]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [462]
+         Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.ui 4 0 2022-05-14 11:03:57.763
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.ui [467]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [458]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jface 2 0 2022-05-14 11:04:01.549
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-14 11:04:01.549
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@b5390,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@59831016,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-14 11:04:01.549
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@37f71e8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@63b0b3dd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-14 11:04:05.049
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\vadti'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-05-14 18:03:28.737
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:683)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:275)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:230)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:55)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:88)
+	at org.eclipse.jface.resource.LazyResourceManager.create(LazyResourceManager.java:103)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:72)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:88)
+	at org.eclipse.jface.resource.ResourceManager.createImage(ResourceManager.java:175)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.getImage(AbstractContributionItem.java:151)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.updateIcons(AbstractContributionItem.java:177)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.update(AbstractContributionItem.java:127)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.fill(AbstractContributionItem.java:264)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:729)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:806)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:673)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1227)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeUIElementTopicVisible(MenuManagerRenderer.java:213)
+	at jdk.internal.reflect.GeneratedMethodAccessor39.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4779)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:361)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.updateVisibility(ContributionRecord.java:105)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:191)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:202)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$3(WorkbenchWindow.java:866)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4035)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3635)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-05-14 18:03:28.778
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:683)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:275)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:230)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:55)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:88)
+	at org.eclipse.jface.resource.LazyResourceManager.create(LazyResourceManager.java:103)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:72)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:88)
+	at org.eclipse.jface.resource.ResourceManager.createImage(ResourceManager.java:175)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.getImage(AbstractContributionItem.java:151)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.updateIcons(AbstractContributionItem.java:177)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.update(AbstractContributionItem.java:127)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.fill(AbstractContributionItem.java:264)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:729)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:806)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:673)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1227)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContents(MenuManagerRenderer.java:655)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeTopicChildAdded(MenuManagerRenderer.java:325)
+	at jdk.internal.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4779)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:340)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.mergeIntoModel(ContributionRecord.java:253)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processAddition(MenuManagerRenderer.java:551)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.generateContributions(MenuManagerRenderer.java:531)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContributions(MenuManagerRenderer.java:499)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContributions(MenuManagerRenderer.java:502)
+	at org.eclipse.ui.internal.PopupMenuExtender.addMenuContributions(PopupMenuExtender.java:380)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:355)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:338)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:468)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:495)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1063)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1087)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1068)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5143)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4775)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2286)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5015)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:237)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4101)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-05-14 18:03:28.780
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:683)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:275)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:230)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:55)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:88)
+	at org.eclipse.jface.resource.LazyResourceManager.create(LazyResourceManager.java:103)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:72)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:88)
+	at org.eclipse.jface.resource.ResourceManager.createImage(ResourceManager.java:175)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.getImage(AbstractContributionItem.java:151)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.updateIcons(AbstractContributionItem.java:177)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.update(AbstractContributionItem.java:127)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.fill(AbstractContributionItem.java:317)
+	at org.eclipse.jface.action.ToolBarManager.update(ToolBarManager.java:358)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer.updateWidget(ToolBarManagerRenderer.java:643)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer.subscribeUIElementTopicVisible(ToolBarManagerRenderer.java:219)
+	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4779)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:361)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolBarContributionRecord.updateVisibility(ToolBarContributionRecord.java:79)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer$2.changed(ToolBarManagerRenderer.java:521)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.processScheduled(EclipseContext.java:356)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.set(EclipseContext.java:372)
+	at org.eclipse.e4.ui.internal.services.ContextContextService.setEventCaching(ContextContextService.java:126)
+	at org.eclipse.e4.ui.internal.services.ContextContextService.deferUpdates(ContextContextService.java:87)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:775)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:680)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:675)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3215)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$9(WorkbenchPage.java:3097)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3095)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3065)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3056)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:569)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:524)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:367)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:172)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:288)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:254)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252)
+	at org.eclipse.jdt.internal.ui.navigator.OpenAndExpand.run(OpenAndExpand.java:53)
+	at org.eclipse.ui.actions.RetargetAction.run(RetargetAction.java:215)
+	at org.eclipse.ui.navigator.CommonNavigatorManager$1.open(CommonNavigatorManager.java:183)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:800)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:797)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1116)
+	at org.eclipse.ui.navigator.CommonViewer.handleOpen(CommonViewer.java:454)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:296)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:331)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1063)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4060)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3632)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+!SESSION 2022-05-14 22:21:33.253 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.fx.core.guice 4 0 2022-05-14 22:21:36.066
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.core.guice [458]
+  Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext 4 0 2022-05-14 22:21:36.069
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext [462]
+  Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [458]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.proposals 4 0 2022-05-14 22:21:36.073
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.proposals [463]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [462]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [458]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Import-Package: org.eclipse.fx.ide.css.ui.extapi
+    -> Export-Package: org.eclipse.fx.ide.css.ui.extapi; bundle-symbolic-name="org.eclipse.fx.ide.css.ui"; bundle-version="3.7.0.202010120832"; version="0.0.0"; x-internal:="true"
+       org.eclipse.fx.ide.css.ui [467]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.ui 4 0 2022-05-14 22:21:36.077
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.ui [464]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [462]
+         Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [458]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.ui 4 0 2022-05-14 22:21:36.080
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.ui [467]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [458]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jface 2 0 2022-05-14 22:21:43.191
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-14 22:21:43.191
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6c46dc02,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5606d537,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-14 22:21:43.191
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@b5390,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@59831016,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-14 22:21:48.123
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\vadti'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface.text 4 0 2022-05-15 00:18:05.980
+!MESSAGE java.lang.NullPointerException: Cannot invoke "java.util.concurrent.CompletionStage.toCompletableFuture()" because the return value of "java.util.function.Function.apply(Object)" is null
+!STACK 0
+java.util.concurrent.CompletionException: java.lang.NullPointerException: Cannot invoke "java.util.concurrent.CompletionStage.toCompletableFuture()" because the return value of "java.util.function.Function.apply(Object)" is null
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1159)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.concurrent.CompletionStage.toCompletableFuture()" because the return value of "java.util.function.Function.apply(Object)" is null
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	... 6 more
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-05-15 00:47:17.271
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionMarkerResolution.checkMarkerResoultion(LSPCodeActionMarkerResolution.java:170)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionMarkerResolution.hasResolutions(LSPCodeActionMarkerResolution.java:192)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.hasResolution(MarkerHelpRegistry.java:264)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.hasResolutions(MarkerHelpRegistry.java:234)
+	at org.eclipse.ui.views.markers.MarkerField.annotateImage(MarkerField.java:87)
+	at org.eclipse.ui.internal.views.markers.MarkerProblemSeverityAndMessageField.update(MarkerProblemSeverityAndMessageField.java:80)
+	at org.eclipse.ui.internal.views.markers.MarkerColumnLabelProvider.update(MarkerColumnLabelProvider.java:57)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:144)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:970)
+	at org.eclipse.ui.internal.views.markers.MarkersTreeViewer.doUpdateItem(MarkersTreeViewer.java:70)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:126)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1048)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:427)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2109)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.updateChildren(AbstractTreeViewer.java:2786)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefreshStruct(AbstractTreeViewer.java:1971)
+	at org.eclipse.jface.viewers.TreeViewer.internalRefreshStruct(TreeViewer.java:684)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefreshStruct(AbstractTreeViewer.java:1977)
+	at org.eclipse.jface.viewers.TreeViewer.internalRefreshStruct(TreeViewer.java:684)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1947)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1904)
+	at org.eclipse.jface.viewers.StructuredViewer.lambda$3(StructuredViewer.java:1482)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1398)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:365)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1359)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1482)
+	at org.eclipse.jface.viewers.ColumnViewer.refresh(ColumnViewer.java:538)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1443)
+	at org.eclipse.ui.internal.views.markers.UIUpdateJob.runInUIThread(UIUpdateJob.java:103)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4035)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3635)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+!SESSION 2022-05-15 03:02:55.274 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.fx.core.guice 4 0 2022-05-15 03:02:57.615
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.core.guice [458]
+  Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext 4 0 2022-05-15 03:02:57.619
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext [462]
+  Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [458]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.proposals 4 0 2022-05-15 03:02:57.623
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.proposals [463]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [462]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [458]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Import-Package: org.eclipse.fx.ide.css.ui.extapi
+    -> Export-Package: org.eclipse.fx.ide.css.ui.extapi; bundle-symbolic-name="org.eclipse.fx.ide.css.ui"; bundle-version="3.7.0.202010120832"; version="0.0.0"; x-internal:="true"
+       org.eclipse.fx.ide.css.ui [467]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.ui 4 0 2022-05-15 03:02:57.627
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.ui [464]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [462]
+         Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [458]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.ui 4 0 2022-05-15 03:02:57.627
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.ui [467]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [458]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jface 2 0 2022-05-15 03:03:01.876
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-15 03:03:01.876
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5606d537,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@b5390,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-15 03:03:01.876
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@59831016,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@37f71e8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-15 03:03:05.392
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\vadti'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-05-15 03:28:24.897
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:683)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:275)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:290)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:268)
+	at org.eclipse.pde.internal.ui.util.SharedLabelProvider.createImage(SharedLabelProvider.java:114)
+	at org.eclipse.pde.internal.ui.util.SharedLabelProvider.get(SharedLabelProvider.java:90)
+	at org.eclipse.pde.internal.ui.util.SharedLabelProvider.get(SharedLabelProvider.java:79)
+	at org.eclipse.pde.internal.ui.correction.java.SearchRepositoriesForIUProposal.getImage(SearchRepositoriesForIUProposal.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.createCompletionProposalLink(AbstractAnnotationHover.java:492)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.createCompletionProposalsList(AbstractAnnotationHover.java:396)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.createCompletionProposalsControl(AbstractAnnotationHover.java:377)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.deferredCreateContent(AbstractAnnotationHover.java:306)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.setInput(AbstractAnnotationHover.java:190)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1151)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1120)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:884)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:237)
+	at org.eclipse.jface.text.TextViewerHoverManager.lambda$3(TextViewerHoverManager.java:227)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4035)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3635)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+!SESSION 2022-05-15 08:16:54.852 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.fx.core.guice 4 0 2022-05-15 08:17:14.001
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.core.guice [458]
+  Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext 4 0 2022-05-15 08:17:14.017
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext [462]
+  Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [458]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.proposals 4 0 2022-05-15 08:17:14.019
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.proposals [463]
+  Unresolved requirement: Import-Package: org.eclipse.fx.ide.css.ui.extapi
+    -> Export-Package: org.eclipse.fx.ide.css.ui.extapi; bundle-symbolic-name="org.eclipse.fx.ide.css.ui"; bundle-version="3.7.0.202010120832"; version="0.0.0"; x-internal:="true"
+       org.eclipse.fx.ide.css.ui [467]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [458]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [462]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.ui 4 0 2022-05-15 08:17:14.043
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.ui [464]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [462]
+         Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [458]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.ui 4 0 2022-05-15 08:17:14.056
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.ui [467]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [458]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jface 2 0 2022-05-15 08:17:19.668
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-15 08:17:19.668
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@594c66c3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@64e657b0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-15 08:17:19.668
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@50013a15,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6c46dc02,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-15 08:17:24.742
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\vadti'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2022-05-15 08:26:44.851
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): roo2t [in HomePageController [in [Working copy] HomePageController.java [in gui.main [in src [in ArtInstallationAuction]]]]] does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:574)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:617)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:328)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:314)
+	at org.eclipse.jdt.internal.core.SourceRefElement.getSourceRange(SourceRefElement.java:233)
+	at org.eclipse.jdt.internal.core.Member.getJavadocRange(Member.java:301)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContentFromSource(JavadocContentAccess2.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:515)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:748)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:666)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:658)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2022-05-15 08:26:44.853
+!MESSAGE roo2t [in HomePageController [in [Working copy] HomePageController.java [in gui.main [in src [in ArtInstallationAuction]]]]] does not exist
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:03:33.879
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:03:37.386
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:04:26.942
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:04:39.455
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:04:55.127
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:05:03.636
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:05:05.641
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:05:06.646
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:05:14.153
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:05:17.660
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:05:20.665
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:05:23.173
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:05:38.190
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:05:50.706
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:06:10.722
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:06:21.734
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:06:25.740
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:06:43.756
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:07:02.800
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:07:35.367
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:07:36.372
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:07:39.877
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:07:41.883
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:07:43.887
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2022-05-15 09:07:44.891
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IType.getSuperclassName()" because "t" is null
+	at org.eclipse.fx.ide.model.internal.FXEventHandlerProperty.isEventHandler(FXEventHandlerProperty.java:38)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.getProperty(PropertiesUtil.java:144)
+	at org.eclipse.fx.ide.model.internal.utils.PropertiesUtil.resolveProperties(PropertiesUtil.java:100)
+	at org.eclipse.fx.ide.model.internal.FXClass.getLocalProperties(FXClass.java:143)
+	at org.eclipse.fx.ide.model.internal.FXClass.getAllProperties(FXClass.java:135)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:156)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)

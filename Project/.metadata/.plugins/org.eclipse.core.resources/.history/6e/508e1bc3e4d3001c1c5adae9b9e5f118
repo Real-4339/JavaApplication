@@ -1,0 +1,36 @@
+package independent;
+
+import java.util.Hashtable;
+
+public class Product {
+	
+	 private int ID;
+	 private String name;
+	 private String creator;
+	 private double price;
+	 private int count;
+	 
+	 public int getIDt(){return ID;}
+	 
+	 public String getName(){return name;}
+	 private void setName(String Name){ name = Name;}
+	 
+	 public String getcreator(){return creator;}
+	 private void setcreator(String Name){ creator = Name;}
+	 
+	 public double getPrice(){return price;}
+	 private void setPrice(double Price){ price = Price;}
+	 
+	 public int getCount(){return count;}
+	 void setCount(int Count){ count = Count;}
+
+	 public Product () {}
+	    
+     public Product (String name, double price, int count)
+     {
+       this.setName(name);
+       this.setPrice(price);
+       this.setCount(count);
+     }
+	 
+}

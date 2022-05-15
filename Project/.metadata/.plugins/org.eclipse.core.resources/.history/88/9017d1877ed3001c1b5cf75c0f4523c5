@@ -1,0 +1,5 @@
+package independent;
+
+public interface Follower {
+
+}
