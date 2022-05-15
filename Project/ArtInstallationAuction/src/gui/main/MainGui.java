@@ -46,7 +46,7 @@ public class MainGui extends Stage{
 		pane.getChildren().add(refill);
 		pane.getChildren().add(refillField);
 		
-		scroll.setContent(pane);	
+		scroll.setContent(pane);
 		
 		refill.setOnAction(e -> {
 			try {
@@ -66,6 +66,11 @@ public class MainGui extends Stage{
 				Task<String> t = new Task<String>() {
 	 				protected String call() throws NumberFormatException, SQLException {
 				        flag = true;
+ 
+   			            if (Main.polka.getActiveUsers().get(index).getBalance() < Integer.parseInt(rateField.getText())) {
+   			            	flag = false;
+   			            	return (new String("not enough money"));
+				        }
 	 					return Main.polka.buy(login, Integer.parseInt(rateField.getText()));
 	 				}
 	 				protected void succeeded() {
