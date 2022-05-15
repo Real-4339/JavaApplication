@@ -1,11 +1,8 @@
 package gui.log;
 
-import java.io.IOException;
 import java.sql.SQLException;
 
-import database.SqlDB;
-import gui.main.MainGui;
-import independent.Checker;
+import User_single.User_Info;
 import independent.Storage;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -21,7 +18,6 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.stage.Window;
 import program.Main;
-
 
 public class LogController {
 	    @FXML
@@ -83,18 +79,43 @@ public class LogController {
 	        //Initializing User list 
 	        Main.polka.updateUsers();
 	        
+	        
 	        // Making a flag to control enter to main app
 	        boolean flag = this.validate(loginName, password, Main.polka);
 
 	        if (!flag) {
 	            infoBox("Please enter correct Login and Password", null, "Failed");
 	        } else {
-	            infoBox("Login Successful!", null, "Failed"); // Up to main
+	            infoBox("Login Successful!", null, "Success"); // Up to main
 	            
-                String logindex = loginNameField.getText();
-                
-                int index = Main.polka.updateActiveUsers(logindex);
-                MainGui gui = new MainGui(logindex, index);
+	            try {
+	            	
+	            	System.out.println(getClass());
+	            	Main.polka.updateActiveUsers(loginName);
+	            	Main.polka.updateProducts();
+	            	int index = Main.polka.findUserID(loginName);
+	            	if (User_Info.getInstance().getLogin().equals("root"))
+	            	Main.startMainRoot(index);
+	            	else 
+	            	Main.startMain(index);
+	            	
+	            	
+	            	
+	            	//System.out.print(User.User_Info.getInstance().getLogin());
+	            	
+	                
+		   			
+//		   			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/resources/HomePage.fxml"));
+//		   	        Parent root1 = (Parent) fxmlLoader.load();
+//		   	        Stage stage = new Stage();
+//		   	        stage.setTitle("Home");
+//		   	        stage.setScene(new Scene(root1));  
+//		   	        stage.show();
+		   	    } catch(Exception e) {
+		   	        e.printStackTrace();
+		   	    }
+	            
+                //MainGui gui = new MainGui(logindex, index);
 	        }
 	    }
 
@@ -121,9 +142,10 @@ public class LogController {
 	    private boolean validate(String log, String pass, Storage user) {
 	    	
 	    	 for (int i = 0; i < user.getUsers().size(); i++) {
-	             
-	    		 System.out.println(user.getUsers().get(i).getLogin() +" "+ user.getUsers().get(i).getPass());
 	    		 
+	    		 if(user.getUsers().get(i).getLogin() == null)
+	    			 return false;
+	             
 	             if (log.equals(user.getUsers().get(i).getLogin()) && pass.equals(user.getUsers().get(i).getPass())){
 	            	 return true;
 	             }
