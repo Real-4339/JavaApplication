@@ -24,10 +24,11 @@
     <fullyQualifiedTypeName name="User.User_Info"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Hashtable"/>
-    <fullyQualifiedTypeName name="program.Main"/>
     <fullyQualifiedTypeName name="independent.User"/>
     <fullyQualifiedTypeName name="javafx.scene.control.TableColumn"/>
     <fullyQualifiedTypeName name="javafx.scene.control.cell.PropertyValueFactory"/>
     <fullyQualifiedTypeName name="independent.Product"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.TextField"/>
     <fullyQualifiedTypeName name="User_single.User_Info"/>
+    <fullyQualifiedTypeName name="program.Main"/>
 </qualifiedTypeNameHistroy>
