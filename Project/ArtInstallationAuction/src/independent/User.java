@@ -1,5 +1,10 @@
 package independent;
 
+import java.util.ArrayList;
+import java.util.Hashtable;
+
+import Patterns.Follower;
+
 public class User {
 	private int ID;
     private String login;
@@ -9,6 +14,24 @@ public class User {
     private String Email;
     private double balance;
     private double spent;
+    private ArrayList<Product> participate = new ArrayList<Product>();
+    private ArrayList<Follower> followers = new ArrayList<Follower>();
+    //private Hashtable<Integer, Follower> followers = new Hashtable<Integer,Follower>();
+    
+    public ArrayList<Product> getParticipans() {return participate;}
+    public void setParticipating(Product product) {
+    	participate.add(product);
+    }
+    
+    public ArrayList<Follower> getFollowers() {return followers;}
+    public void setFollower(Follower follow) {
+    	followers.add(follow);
+    }
+    
+    //public Hashtable getFollowers() {return followers;}
+//    public void setFollower(int key, Follower follow) {
+//    	followers.put(key, follow);
+//    }
 
     public String getLogin(){return login;}
     public String getPass(){return password;}

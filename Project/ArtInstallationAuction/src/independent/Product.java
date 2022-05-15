@@ -1,5 +1,10 @@
 package independent;
 
+import java.util.ArrayList;
+import java.util.Hashtable;
+
+import Patterns.Follower;
+
 public class Product {
 	
 	 private int ID;
@@ -7,6 +12,22 @@ public class Product {
 	 private String Creator;
 	 private double price;
 	 private int count;
+	 private int BidCount;
+	 private Hashtable<Integer, User> Visitors = new Hashtable<Integer, User>();
+	 
+	 public Hashtable<Integer, User> getVisitors(){
+		 return Visitors;
+	 }
+	 public void setVisitors(int bid, User user){
+		  Visitors.put(bid, user);
+	 }
+	 
+	 public int getBidCount() {return BidCount;}
+	    public void setBidCount(int count) {
+	    	System.out.println(BidCount + " before");
+	    	BidCount += count;
+	    	System.out.println(BidCount + " after");
+	    }
 	 
 	 public int getID(){return ID;}
 	 public void setID(int id){ID = id;}

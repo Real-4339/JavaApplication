@@ -4,7 +4,11 @@ import database.SqlDB;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Map.Entry;
 
+import Patterns.Follower;
+import Patterns.Report;
+import Patterns.Winner;
 import User_single.User_Info;
 
 // Class to storage user data
@@ -14,7 +18,8 @@ public class Storage {
 	ArrayList<User> all = new ArrayList<User>();
 	ArrayList<User> active = new ArrayList<User>();
 	
-	private ArrayList products = new ArrayList<>();
+	private ArrayList<Product> products = new ArrayList<>();
+	private ArrayList<Follower> followers = new ArrayList<>();
 	
 	public ArrayList getProducts(){return products;}
 	
@@ -41,6 +46,7 @@ public class Storage {
 	}
 	
 	public User findUser (String login) {
+		
 		for (int a = 0; a < active.size(); a++)
 		{
 			if (active.get(a).getLogin().equals(login)) {
@@ -187,19 +193,116 @@ public void deleteUserLog (String login) throws SQLException {
 		 updateUsers ();
 	}
 	
+	
+	public boolean ControlExistence(int id) {
+		
+		for (int a = 0; a < getProducts().size(); a++)
+		{
+			 if (products.get(a).getID() == id) { 
+				 return true; 
+			 }
+		}
+		
+		
+		return false;
+	}
+	
+	
 	public void inputMoney (String man, int money, int index) throws SQLException {
 		int balance = 0;
 		
 		for (int a = 0; a < active.size(); a++) {
 	        if (active.get(a).getLogin().equals(man)) {
 	        	balance = (int)active.get(a).getBalance();
-	        	
 	        }
 	    }
 		
 		balance += money;
 		sql.User_updateBalance(man, balance, index);
 		updateUsers ();
+	}
+	
+	public boolean ControlAuction(User user, int id) {
+		for(int a = 0; a < user.getParticipans().size(); a++)
+		{
+			if (user.getParticipans().get(a).getID() == id)
+			{
+				  System.out.println("id: " + id + " " + user.getParticipans().get(a).getID());
+				  return true;
+			}
+			
+		}
+		return false;
+	}
+	
+	public int buy(User user, int id, int Bid) {
+		Product product = null;
+		int index = 0;
+		for(int a = 0; a < products.size(); a++)
+		{
+			if (products.get(a).getID() == id)
+			{
+				//if (products.get(a).getCount() == 0) return 9; // there are no more 
+				  products.get(a).setBidCount(1);
+				  //products.get(a).setCount(products.get(a).getCount() - 1);
+				  product = products.get(a);
+				  index = a;
+				  products.get(a).setVisitors(Bid, user);
+			}
+		}
+		
+		for(int a = 0; a < active.size(); a++) {
+			if (active.get(a) == user)
+			{
+				active.get(a).setParticipating(product);
+			
+				active.get(a).setFollower(new Report());
+				
+				System.out.println(product.getBidCount() +" count");
+				
+				if (product.getBidCount() == 3) {
+					return 7; // already 3
+				}
+				
+				//active.get(a).setFollower(id, new Report());
+			}
+		}
+		return 0;
+	}
+	
+	public void inform(int id) {
+		User user = null;
+		Product product = null;
+		int index = -1;
+		int max = -1;
+		int count = 0;
+		int ind = 0;
+		
+		for (int a = 0; a < products.size(); a++) {
+			if (products.get(a).getID() == id) {
+				product = products.get(a);
+				index = a;
+			}
+		}
+		
+		for (Entry<Integer, User> e : product.getVisitors().entrySet()) 
+            if(e.getKey() > max) {
+            	max = e.getKey();
+            	user = e.getValue();
+            }
+
+		for (int a = 0; a < user.getFollowers().size(); a++) {
+			if (user.getParticipans().get(a).getID() == id){
+				products.get(index).getVisitors().get(max).getFollowers().remove(a);
+				products.get(index).getVisitors().get(max).getFollowers().add(new Winner());
+			}
+		}
+	        
+		
+	}
+	
+	public String buy (String login, int money) throws SQLException {
+		return "";
 	}
 	
 //	public String buy (String login, int money) throws SQLException {
