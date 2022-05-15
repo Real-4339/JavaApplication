@@ -34,4 +34,5 @@
     <fullyQualifiedTypeName name="Patterns.Report"/>
     <fullyQualifiedTypeName name="javafx.beans.property.SimpleObjectProperty"/>
     <fullyQualifiedTypeName name="java.util.Hashtable"/>
+    <fullyQualifiedTypeName name="Patterns.Winner"/>
 </qualifiedTypeNameHistroy>
