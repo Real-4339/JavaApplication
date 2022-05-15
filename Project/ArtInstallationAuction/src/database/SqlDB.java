@@ -2,6 +2,8 @@ package database;
 
 import java.sql.*;
 import java.util.ArrayList;
+
+import independent.Product;
 import independent.User;
 
 
@@ -47,21 +49,30 @@ public class SqlDB {
         String SQLREQUEST = "Select * from User";
         ResultSet res = statement.executeQuery(SQLREQUEST);
         while(res.next()){
-            guys.add(new User(res.getString("Login"), res.getString("Password"), res.getString("FirstName"), res.getString("SecondName"), res.getDouble("Balance"), res.getDouble("Spent")));
+            guys.add(new User(res.getInt("UserId") ,res.getString("Login"), res.getString("Password"), res.getString("FirstName"), res.getString("SecondName"), res.getString("Email"), res.getDouble("Balance"), res.getDouble("Spent")));
+        }
+    }
+    
+   // 
+    public void Products_out(ArrayList<Product> list) throws SQLException {
+        String SQLREQUEST = "Select * from Product";
+        ResultSet res = statement.executeQuery(SQLREQUEST);
+        while(res.next()){
+        	list.add(new Product(res.getInt("Id") ,res.getString("Name"), res.getString("Creator"), res.getDouble("Price"), res.getInt("Count")));
         }
     }
     
     // Fun to put info to a DB from a List
     public void User_in(ArrayList<User> guy) throws SQLException {
         statement.executeUpdate("INSERT INTO User(Login, Password, FirstName, SecondName, Balance, Spent)" 
-        + "VALUES ('"+ guy.get(0).getLogin()+"', '"+ guy.get(0).getPass()+"', '" 
-        + guy.get(0).getfirstName()+"', '"+ guy.get(0).getsecName()+"', 0, 0)");
+        + "VALUES ('"+ guy.get(guy.size()-1).getLogin()+"', '"+ guy.get(guy.size()-1).getPass()+"', '" 
+        + guy.get(guy.size()-1).getName()+"', '"+ guy.get(guy.size()-1).getSurname()+"', 0, 0)");
     }
     // Fun to put info to a DB from a List, but with email
     public void User_inEmail(ArrayList<User> guy) throws SQLException {
         statement.executeUpdate("INSERT INTO User(Login, Password, FirstName, SecondName, Email, Balance, Spent)" 
         + "VALUES ('"+ guy.get(0).getLogin()+"', '"+ guy.get(0).getPass()+"', '" 
-        + guy.get(0).getfirstName()+"', '"+ guy.get(0).getsecName()+"', '"+ guy.get(0).getEmail()+"', 0, 0)");
+        + guy.get(0).getName()+"', '"+ guy.get(0).getSurname()+"', '"+ guy.get(0).getEmail()+"', 0, 0)");
     }
     
     public void User_updateBalance(String guy, int balance, int index) throws SQLException {
@@ -74,5 +85,17 @@ public class SqlDB {
     	//statement.executeUpdate(SQLREQUEST);
     	//statement = connection.prepareStatement(SQLREQUEST); 
     }
+    
+    public void User_delete(int index) throws SQLException {
+    	String SQLREQUEST = "DELETE FROM User WHERE UserId = ?";
+    	PreparedStatement state = connection.prepareStatement(SQLREQUEST);
+    	state.setInt(1, index);
+    	state.executeUpdate();
+    	
+    	//statement.executeUpdate(SQLREQUEST);
+    	//statement = connection.prepareStatement(SQLREQUEST); 
+    }
+    
+    
   
 }
