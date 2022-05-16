@@ -18,23 +18,16 @@ Project contains the following diagrams:
 
 <!-- /code_chunk_output -->
 
-## Use Case
-
 ## Class diagram
+![](https://github.com/OOP-FIIT/oop-2022-str-17-c-dakic-Real-4339/blob/master/Documentation/uml/Class diagram.png)
 
 ### Description of classes
 
-Example:
 GUI class
 -	This is an abstract class, it is made for simplifying of making certain UI elements e.g. buttons, frames, etc.
 
 ## Package diagram
-
-## Object diagram
-
-## Component diagram
+![](https://github.com/OOP-FIIT/oop-2022-str-17-c-dakic-Real-4339/blob/master/Documentation/uml/Package diagram.png)
 
 ## Composite structure diagram
 ![](https://github.com/OOP-FIIT/oop-2022-str-17-c-dakic-Real-4339/blob/master/Documentation/uml/umlet.png)
-
-## Deployment diagram
