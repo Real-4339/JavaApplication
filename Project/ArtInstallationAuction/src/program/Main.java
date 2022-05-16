@@ -15,7 +15,7 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
 
-public class Main extends Application{
+public class Main extends Application {
 	
 	// Making main storage and sql connection for a program
 	public static SqlDB sql = new SqlDB();
