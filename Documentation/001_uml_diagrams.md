@@ -36,6 +36,6 @@ GUI class
 
 ## Composite structure diagram
 
-https://github.com/OOP-FIIT/oop-2022-str-17-c-dakic-Real-4339/blob/master/Documentation/uml/umlet.png
+![] (https://github.com/OOP-FIIT/oop-2022-str-17-c-dakic-Real-4339/blob/master/Documentation/uml/umlet.png)
 
 ## Deployment diagram
