@@ -53,8 +53,7 @@ public class AuctionsController implements Initializable {
     /**
      * Initializes the controller class.
      */
-    @Override
-	
+      @Override
 	  public void initialize(URL url, ResourceBundle rb) { //set userName label with the string in login
     	index = User_single.User_Info.getInstance().getID();
   	   guest = Main.polka.findUser(User_single.User_Info.getInstance().getLogin());

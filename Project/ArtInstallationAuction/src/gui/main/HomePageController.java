@@ -75,7 +75,6 @@ public class HomePageController implements Initializable {
      * @param url
      * @param rb
      */
-    //@Override
 	
 	  public void initialize(URL url, ResourceBundle rb) { //set userName label with the string in login
 	  //usernameLabel.setText(login.LoginController.user.getUsername());\
