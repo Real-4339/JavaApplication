@@ -10,14 +10,9 @@ Enviroment:
 * JavaFX 18
 * Scene Builder
 * SQLite JDBC 3.36.0.3
+* jfoenix - 9.0.10 
 
 ## Installation
 
-Example:
-
 * Make sure SQLite Studio is installed properly.
 * Change URL in SqlDB class to work properly (DriverManager.getConnection();)
-
-## Database
-
-Write here and present the specifics of your database, if you use it or another form of data storage.
