@@ -41,7 +41,7 @@ Aggregation in CancelAuctionController class to make a local copy of User. (28 l
 -	Main.java # 18
 
 ### Secondary criteria
-Example:
+
 •	Observer
 - User.java # 18
 •	RTTI
