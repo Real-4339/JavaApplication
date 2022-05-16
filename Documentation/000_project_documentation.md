@@ -13,12 +13,12 @@ Installations can differ in size, they are suitable for people who just want to 
 ---------------------------------------------
 ## Fulfillment of criteria
 
--Pattern [Observer]
--Exeption
--Multi-threads
--RTTI
--Lambda
--GUI
+- Pattern [Observer]
+- Exeption
+- Multi-threads
+- RTTI
+- Lambda
+- GUI
 
 ----------------------------------------------
 ## Certain implementations
