@@ -39,4 +39,4 @@ Database Schema diagram:
 ![Example change this](https://raw.githubusercontent.com/afifaniks/InventorySystem/master/images/diagrams/schema.png)
 
 Brief demonstration of key functionality - Main Prototype:
-![](https://raw.githubusercontent.com/afifaniks/InventorySystem/master/images/prototypes/Customers.png)
+![](https://github.com/OOP-FIIT/oop-2022-str-17-c-dakic-Real-4339/blob/master/Documentation/prototypes/Home.PNG)
