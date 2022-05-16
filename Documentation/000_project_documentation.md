@@ -31,21 +31,21 @@ Aggregation in CancelAuctionController class to make a local copy of User. (28 l
 ## Main criteria
 
 •	polymorphism and aggregation
-– SqlDB.java #11 # 12 
-– Storage.java # 16 
-– CancelAuctionController.java # 28
-–	User.java # from (60 - 112) AdHoc
+- SqlDB.java #11 # 12 
+- Storage.java # 16 
+- CancelAuctionController.java # 28
+-	User.java # from (60 - 112) AdHoc
 
 •	inheritance
-–	CannotDeleteYourself.java # 3
-–	Main.java # 18
+-	CannotDeleteYourself.java # 3
+-	Main.java # 18
 
 ### Secondary criteria
 Example:
 •	Observer
-–	User.java # 18
+- User.java # 18
 •	RTTI
-–	Main.java # 34
+- Main.java # 34
 
 ## List of features for current version v1.0.1
 
