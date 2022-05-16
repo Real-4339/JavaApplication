@@ -4,8 +4,7 @@ Project contains the following fully functional versions:
 
 Versions:
 
-* [v1.0.2](jar/v1.0.0.2.jar) - write location of the compiled program - JAR file
-* [v1.0.1](jar/v1.0.0.2.jar)  - write location of the compiled program - JAR file
+* [v1.0.1](jar/v1.0.1.jar)  - last ver - JAR file
 * [v1.0.0](jar/v1.0.0.jar)  - JAR file
 
 ## How to run
@@ -27,29 +26,19 @@ java --module-path "I:\JavaFX\javafx-sdk-18\lib" --add-modules javafx.controls,j
 
 ## Version changes
 
-Write status Updates on progress for your project.
+-new Gui
+-new System
 
-### Version 1.0.2
-
-Replace using this Example:
+### Version 1.0.1
 
 Added:
 
-* Created checkout window
-* Extended usage of data handler by handling string output
+* Big user inteface
+* mostly done auction
   
 Removed:
 
-* order window removed and replaced with ....
-
-## Version 1.0.1
-
-Replace using this Example:
-
-Added:
-
-* Added login window
-* Created data handler and used serialization in it
+* old gui removed and replaced with new one
 
 ## Version 1.0.0
 
