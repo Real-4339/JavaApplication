@@ -15,4 +15,6 @@ Enviroment:
 ## Installation
 
 * Make sure SQLite Studio is installed properly.
+* Dowload JavaFx
 * Change URL in SqlDB class to work properly (DriverManager.getConnection();)
+* In (Project\ArtInstallationAuction\Art_Installation_Auction.launch) ,  where (VM_ARGUMENTS" value="--module-path &quot;I:JavaFX\javafx-sdk-18\lib&quot;) - You need to change module-path, to yours local, where do you have JavaFx
