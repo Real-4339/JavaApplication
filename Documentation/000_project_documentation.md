@@ -33,10 +33,10 @@ All diagrams can be found at the following [link](Documentation/001_uml_diagrams
 ## Project Skeleton
 Current active UML Class diagram:
 
-![Example change this](https://raw.githubusercontent.com/afifaniks/InventorySystem/master/images/diagrams/simplified-uml.png)
+![Example change this](https://github.com/OOP-FIIT/oop-2022-str-17-c-dakic-Real-4339/blob/master/Documentation/uml/umlet.png)
 
 Database Schema diagram:
 ![Example change this](https://raw.githubusercontent.com/afifaniks/InventorySystem/master/images/diagrams/schema.png)
 
 Brief demonstration of key functionality - Main Prototype:
-![Example change this](https://raw.githubusercontent.com/afifaniks/InventorySystem/master/images/prototypes/Customers.png)
+![](https://raw.githubusercontent.com/afifaniks/InventorySystem/master/images/prototypes/Customers.png)
