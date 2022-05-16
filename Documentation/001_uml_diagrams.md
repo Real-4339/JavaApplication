@@ -7,14 +7,10 @@ Project contains the following diagrams:
 <!-- code_chunk_output -->
 
 - [UML diagram](#uml-diagram)
-  - [Use Case](#use-case)
   - [Class diagram](#class-diagram)
     - [Description of classes](#description-of-classes)
   - [Package diagram](#package-diagram)
-  - [Object diagram](#object-diagram)
-  - [Component diagram](#component-diagram)
   - [Composite structure diagram](#composite-structure-diagram)
-  - [Deployment diagram](#deployment-diagram)
 
 <!-- /code_chunk_output -->
 
