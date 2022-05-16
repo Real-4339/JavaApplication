@@ -54,33 +54,31 @@ $ cd ../oop-2022-str-17-c-dakic-Real-4339/Project/
 Make a pull request
 > Im open to all new. 
 
-## Fulfillment of criteria
-
-Note: In this section, write which criteria you have met from the professor's website
-
 ## Certain implementations
 
-Note: Write here where you have used inheritance, polymorphism and aggregation, or anything else you want to brag about. Also, add in which version you made a certain implementation and within which file and line it is located.
+###In version v1.0.1:
 
-### Main criteria
+I used polymorphism in class User to be able to take from database user information in all needed conditions, (60 - 112 lines)
+Aggregation in CancelAuctionController class to make a local copy of User. (28 line)
 
-Note: Write here your list with the name of the class and the line of code.
+## Main criteria
 
-Example:
+•	polymorphism and aggregation
+- SqlDB.java #11 # 12 
+- Storage.java # 16 
+- CancelAuctionController.java # 28
+-	User.java # from (60 - 112) AdHoc
 
-* polymorphism and aggregation
-  * Login.java # 58
-  * Registration.java # 127
-* inheritance
-  * CheckAccountType.java # 5
+•	inheritance
+-	CannotDeleteYourself.java # 3
+-	Main.java # 18
 
 ### Secondary criteria
 
-Example:
-
-* Observer
-  * RunningStorage.java # 10
-* RTTI
+•	Observer
+- User.java # 18
+•	RTTI
+- Main.java # 34
 
 ## FAQs
 ***
